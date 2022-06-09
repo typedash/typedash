@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Domain agnostic utility functions",
   "sideEffects": false,
   "files": [
@@ -37,9 +37,9 @@
     "zod": "3.14.2"
   },
   "devDependencies": {
-    "@typedash/eslint-config-typedash": "0.0.0",
-    "@typedash/prettier": "0.0.0",
-    "@typedash/tsconfig": "0.0.0",
+    "@typedash/eslint-config-typedash": "0.0.1",
+    "@typedash/prettier": "0.0.1",
+    "@typedash/tsconfig": "0.0.1",
     "@types/jest": "27.0.3",
     "eslint": "8.9.0",
     "jest": "27.3.1",
