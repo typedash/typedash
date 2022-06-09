@@ -27,7 +27,7 @@ to: packages/<%= name %>/package.json
     "test": "echo \"N/A\""
   },
   "dependencies": {
-    "@typedash/typedash": "<%= versions.utils %>",
+    "@typedash/typedash": "<%= versions.typedash %>",
     "axios": "0.24.0",
     "zod": "3.14.2"
   },

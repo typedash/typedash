@@ -56,8 +56,7 @@ When adding or removing a sibling dependency `@typedash/*` you will need to make
 ```json
 {
   "references": [
-    { "path": "../utils" },
-    { "path": "../models" }
+    { "path": "../typedash" },
   ],
    ...other properties
 }
