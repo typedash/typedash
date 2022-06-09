@@ -1,0 +1,23 @@
+{
+  "name": "@typedash/tsconfig",
+  "version": "0.0.0",
+  "description": "Shared TypeScript Configuration",
+  "files": [
+    "tsconfig.json",
+    "tsconfig.cjs.json"
+  ],
+  "main": "tsconfig.json",
+  "scripts": {
+    "clean": "echo \"N/A\"",
+    "build": "echo \"N/A\"",
+    "clean-build": "echo \"N/A\"",
+    "dev": "echo \"N/A\"",
+    "lint": "echo \"N/A\"",
+    "lint:fix": "echo \"N/A\"",
+    "format": "echo \"N/A\"",
+    "test": "echo \"N/A\""
+  },
+  "peerDependencies": {
+    "typescript": "4.2.4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@typedash/prettier",
+  "version": "0.0.0",
+  "description": "Prettier config file(s)",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"N/A\"",
+    "clean": "echo \"N/A\"",
+    "dev": "echo \"N/A\"",
+    "lint": "echo \"N/A\"",
+    "lint:fix": "echo \"N/A\"",
+    "format": "echo \"N/A\"",
+    "test": "echo \"N/A\""
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@typedash/tsconfig/tsconfig.cjs.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "paths": {
+      "@typedash/*": ["./packages/*/src"]
+    }
+  },
+  "include": ["packages/**/*"]
+}

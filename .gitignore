@@ -1,0 +1,18 @@
+# General
+node_modules
+.npmrc
+dist
+build
+.DS_Store
+package-lock.json
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# TS build info
+*.tsbuildinfo% 
