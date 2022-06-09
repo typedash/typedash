@@ -3,7 +3,8 @@
     "changesets",
     "esbuild",
     "newtype",
-    "typedash"
+    "typedash",
+    "yarnpkg"
   ],
   "search.exclude": {
     "**/.yarn": true,
