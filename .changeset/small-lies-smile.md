@@ -5,4 +5,4 @@
 '@typedash/typedash': patch
 ---
 
-Initial release testing
+Initial release testing.
