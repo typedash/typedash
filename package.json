@@ -70,5 +70,9 @@
   "lint-staged": {
     "*.{ts,tsx,js}": "yarn eslint --fix",
     "*.{ts,tsx,js,css,md}": "yarn prettier --write"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
