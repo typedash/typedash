@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@changesets/changelog-github", "npm:0.4.4"],
             ["@changesets/cli", "npm:2.22.0"],
             ["@typedash/eslint-config-typedash", "workspace:packages/eslint-config-typedash"],
             ["@typedash/prettier", "workspace:packages/prettier"],
@@ -920,6 +921,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@changesets/changelog-github", [
+        ["npm:0.4.4", {
+          "packageLocation": "./.yarn/cache/@changesets-changelog-github-npm-0.4.4-d4e4831841-86db486d90.zip/node_modules/@changesets/changelog-github/",
+          "packageDependencies": [
+            ["@changesets/changelog-github", "npm:0.4.4"],
+            ["@changesets/get-github-info", "npm:0.5.0"],
+            ["@changesets/types", "npm:5.0.0"],
+            ["dotenv", "npm:8.6.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@changesets/cli", [
         ["npm:2.22.0", {
           "packageLocation": "./.yarn/cache/@changesets-cli-npm-2.22.0-0920779fd4-bf7cec7b87.zip/node_modules/@changesets/cli/",
@@ -997,6 +1010,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:2.4.2"],
             ["fs-extra", "npm:7.0.1"],
             ["semver", "npm:5.7.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@changesets/get-github-info", [
+        ["npm:0.5.0", {
+          "packageLocation": "./.yarn/cache/@changesets-get-github-info-npm-0.5.0-1ad8cdd598-9867a78753.zip/node_modules/@changesets/get-github-info/",
+          "packageDependencies": [
+            ["@changesets/get-github-info", "npm:0.5.0"],
+            ["dataloader", "npm:1.4.0"],
+            ["node-fetch", "virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7"]
           ],
           "linkType": "HARD",
         }]
@@ -3354,6 +3378,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["dataloader", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/dataloader-npm-1.4.0-ba03bd2183-e2c93d43af.zip/node_modules/dataloader/",
+          "packageDependencies": [
+            ["dataloader", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["debug", [
         ["npm:2.6.9", {
           "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",
@@ -3593,6 +3626,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["domexception", "npm:2.0.1"],
             ["webidl-conversions", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dotenv", [
+        ["npm:8.6.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.6.0-2ce3e9f7bb-38e902c80b.zip/node_modules/dotenv/",
+          "packageDependencies": [
+            ["dotenv", "npm:8.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4051,6 +4093,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-module-utils", "npm:2.7.3"],
             ["debug", "virtual:d9426786c635bc4b52511d6cc4b56156f50d780a698c0e20fc6caf10d3be51cbf176e79cff882f4d42a23ff4d0f89fe94222849578214e7fbae0f2754c82af02#npm:3.2.7"],
+            ["eslint-import-resolver-node", "npm:0.3.6"],
             ["find-up", "npm:2.1.0"]
           ],
           "linkType": "HARD",
@@ -7035,6 +7078,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["node-fetch", [
+        ["npm:2.6.7", {
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "npm:2.6.7"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7", {
+          "packageLocation": "./.yarn/__virtual__/node-fetch-virtual-5a77f5f874/0/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "virtual:1ad8cdd598b996476be1c6089c020c528b0ba46008745c12b0da227ecc3ccf69100e1d6ef858b95530514901a0bb94850e0785ff0476108021fcd743e5895070#npm:2.6.7"],
+            ["@types/encoding", null],
+            ["encoding", null],
+            ["whatwg-url", "npm:5.0.0"]
+          ],
+          "packagePeers": [
+            "@types/encoding",
+            "encoding"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["node-gyp", [
         ["npm:9.0.0", {
           "packageLocation": "./.yarn/unplugged/node-gyp-npm-9.0.0-0eccfca4d1/node_modules/node-gyp/",
@@ -8080,6 +8146,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["root", "workspace:."],
+            ["@changesets/changelog-github", "npm:0.4.4"],
             ["@changesets/cli", "npm:2.22.0"],
             ["@typedash/eslint-config-typedash", "workspace:packages/eslint-config-typedash"],
             ["@typedash/prettier", "workspace:packages/prettier"],
@@ -8816,6 +8883,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["tr46", [
+        ["npm:0.0.3", {
+          "packageLocation": "./.yarn/cache/tr46-npm-0.0.3-de53018915-726321c5ea.zip/node_modules/tr46/",
+          "packageDependencies": [
+            ["tr46", "npm:0.0.3"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/tr46-npm-2.1.0-00af583f4f-ffe6049b9d.zip/node_modules/tr46/",
           "packageDependencies": [
@@ -9201,6 +9275,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["webidl-conversions", [
+        ["npm:3.0.1", {
+          "packageLocation": "./.yarn/cache/webidl-conversions-npm-3.0.1-60310f6a2b-c92a0a6ab9.zip/node_modules/webidl-conversions/",
+          "packageDependencies": [
+            ["webidl-conversions", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:5.0.0", {
           "packageLocation": "./.yarn/cache/webidl-conversions-npm-5.0.0-9649787484-ccf1ec2ca7.zip/node_modules/webidl-conversions/",
           "packageDependencies": [
@@ -9236,6 +9317,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["whatwg-url", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/whatwg-url-npm-5.0.0-374fb45e60-b8daed4ad3.zip/node_modules/whatwg-url/",
+          "packageDependencies": [
+            ["whatwg-url", "npm:5.0.0"],
+            ["tr46", "npm:0.0.3"],
+            ["webidl-conversions", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:8.7.0", {
           "packageLocation": "./.yarn/cache/whatwg-url-npm-8.7.0-67af66db8f-a87abcc6ce.zip/node_modules/whatwg-url/",
           "packageDependencies": [
