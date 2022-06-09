@@ -11,5 +11,9 @@
     "lint:fix": "echo \"N/A\"",
     "format": "echo \"N/A\"",
     "test": "echo \"N/A\""
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

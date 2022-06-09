@@ -31,5 +31,9 @@
   },
   "eslintConfig": {
     "extends": "./index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
