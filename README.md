@@ -1,4 +1,4 @@
-# Typedash Product Monorepo
+# Typedash Monorepo
 
 ## Setup
 
