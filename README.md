@@ -12,8 +12,8 @@ yarn setup
 
 - If you're a [VSCode](https://code.visualstudio.com/) user, you need to perform two additional steps:
   - If it's the first time you're using yarn 2 in VSCode you'd want to install the yarn 2 VSCode sdk `yarn dlx @yarnpkg/sdks vscode`. You don't need to run the command every time you clone this project but the first time.
-    - Press `shift + control + P` and type "Select TypeScript version". Then choose "Use workspace version".
-      - More info [here](https://yarnpkg.com/getting-started/editor-sdks#vscode)
+  - Press `shift + control + P` and type "Select TypeScript version". Then choose "Use workspace version".
+  - More info [here](https://yarnpkg.com/getting-started/editor-sdks#vscode)
 
 ## Package Manager
 
