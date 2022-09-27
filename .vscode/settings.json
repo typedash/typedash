@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
+    "bimap",
     "changesets",
     "esbuild",
     "newtype",
+    "Semigroup",
     "typedash",
     "yarnpkg"
   ],
