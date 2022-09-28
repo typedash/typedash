@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.2.1
+
+### Patch Changes
+
+- e6a9bbe: Correct version bumps of zod and fp-ts
+
 ## 0.2.0
 
 ### Minor Changes
