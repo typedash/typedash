@@ -1718,7 +1718,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash", "npm:4.14.177"],
             ["@types/ramda", "npm:0.27.1"],
             ["eslint", "npm:8.9.0"],
-            ["fp-ts", "npm:2.11.5"],
+            ["fp-ts", "npm:2.12.3"],
             ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],
             ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],
             ["lodash", "npm:4.17.21"],
@@ -1732,7 +1732,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.0.7"],
             ["ts-pattern", "npm:3.3.5"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=493e53"],
-            ["zod", "npm:3.14.2"]
+            ["zod", "npm:3.19.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -4699,10 +4699,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["fp-ts", [
-        ["npm:2.11.5", {
-          "packageLocation": "./.yarn/cache/fp-ts-npm-2.11.5-022974db67-68a4884527.zip/node_modules/fp-ts/",
+        ["npm:2.12.3", {
+          "packageLocation": "./.yarn/cache/fp-ts-npm-2.12.3-d126f7fb51-398acad3d8.zip/node_modules/fp-ts/",
           "packageDependencies": [
-            ["fp-ts", "npm:2.11.5"]
+            ["fp-ts", "npm:2.12.3"]
           ],
           "linkType": "HARD",
         }]
@@ -4722,7 +4722,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/fp-ts", null],
             ["@types/monocle-ts", null],
             ["@types/newtype-ts", null],
-            ["fp-ts", "npm:2.11.5"],
+            ["fp-ts", "npm:2.12.3"],
             ["monocle-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12"],
             ["newtype-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.3.5"]
           ],
@@ -6993,7 +6993,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["monocle-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12"],
             ["@types/fp-ts", null],
-            ["fp-ts", "npm:2.11.5"]
+            ["fp-ts", "npm:2.12.3"]
           ],
           "packagePeers": [
             "@types/fp-ts",
@@ -7057,7 +7057,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["newtype-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.3.5"],
             ["@types/fp-ts", null],
             ["@types/monocle-ts", null],
-            ["fp-ts", "npm:2.11.5"],
+            ["fp-ts", "npm:2.12.3"],
             ["monocle-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12"]
           ],
           "packagePeers": [
@@ -9599,10 +9599,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["zod", [
-        ["npm:3.14.2", {
-          "packageLocation": "./.yarn/cache/zod-npm-3.14.2-1882ddc288-397c300f09.zip/node_modules/zod/",
+        ["npm:3.19.1", {
+          "packageLocation": "./.yarn/cache/zod-npm-3.19.1-5084a5dfc9-56e420ea58.zip/node_modules/zod/",
           "packageDependencies": [
-            ["zod", "npm:3.14.2"]
+            ["zod", "npm:3.19.1"]
           ],
           "linkType": "HARD",
         }]

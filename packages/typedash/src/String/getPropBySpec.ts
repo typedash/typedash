@@ -13,9 +13,9 @@ export const getPropBySpec =
       A.findFirst(([_key, strings]) =>
         pipe(
           strings,
-          A.exists((str) => S.includes(str)(data))
-        )
+          A.exists((str) => S.includes(str)(data)),
+        ),
       ),
-      O.map(([key]) => key)
+      O.map(([key]) => key),
     )
   }
