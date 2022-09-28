@@ -15,6 +15,7 @@
     "yarn-s": "yarn workspaces foreach --exclude=root --verbose --topological-dev",
     "yarn-run-s": "yarn yarn-s run",
     "status": "changeset status --since=origin/main --verbose",
+    "_changeset": "changeset",
     "changeset": "changeset add --open",
     "changeset-empty": "changeset add --empty",
     "prerelease": "./scripts/prerelease.sh",

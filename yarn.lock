@@ -1171,7 +1171,7 @@ __metadata:
     "@types/lodash": 4.14.177
     "@types/ramda": 0.27.1
     eslint: 8.9.0
-    fp-ts: latest
+    fp-ts: ^2.12.3
     fp-ts-std: 0.13.1
     jest: 27.3.1
     lodash: 4.17.21
@@ -1185,7 +1185,7 @@ __metadata:
     ts-jest: 27.0.7
     ts-pattern: 3.3.5
     typescript: 4.2.4
-    zod: latest
+    zod: ^3.19.1
   languageName: unknown
   linkType: soft
 
@@ -3599,7 +3599,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fp-ts@npm:latest":
+"fp-ts@npm:^2.12.3":
   version: 2.12.3
   resolution: "fp-ts@npm:2.12.3"
   checksum: 398acad3d8c5fbd4b0ee420bbb57a45cd98f54e22d6240fc3ee88a7c9967536cba9285c858d37251f9dea137d767a0ff2354203046ba9a149c064fd8de9fe0e3
@@ -7913,7 +7913,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:latest":
+"zod@npm:^3.19.1":
   version: 3.19.1
   resolution: "zod@npm:3.19.1"
   checksum: 56e420ea5845912324a8fc61833714a2aec84954e418b52660d76502183c6e62fef9447cbfa64349640c5ce190cf2c24267e006bb80f066183e2f3fa9fe11864
