@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.2.0
+
+### Minor Changes
+
+- abc0bcf: Add `T` (Task) module. Bump `zod` and `fp-ts` to latest.
+
 ## 0.1.0
 
 ### Minor Changes
