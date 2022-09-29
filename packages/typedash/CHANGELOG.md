@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.4.1
+
+### Patch Changes
+
+- b3b0e93: 🤜 For build artifacts.
+
 ## 0.4.0
 
 ### Minor Changes
