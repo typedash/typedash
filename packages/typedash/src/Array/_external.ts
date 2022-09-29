@@ -57,7 +57,6 @@ export {
   takeLeftWhile,
   takeRight,
   union,
-  uniq,
   zip,
   zipWith,
   updateAt,
@@ -76,7 +75,7 @@ export {
   zipAll,
 } from 'fp-ts-std/Array'
 
-export { includes, sortBy, groupWith, groupBy } from 'ramda'
+export { includes, sortBy, groupWith, groupBy, uniq, uniqBy } from 'ramda'
 
 export {
   included,
