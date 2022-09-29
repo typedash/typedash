@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.3.0
+
+### Minor Changes
+
+- d322d07: Add `A.uniq` and `A.uniqBy` from ramda.
+
 ## 0.2.1
 
 ### Patch Changes
