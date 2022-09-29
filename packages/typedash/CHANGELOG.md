@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.4.0
+
+### Minor Changes
+
+- 877231a: 🔃 Add A.rotate, upgrade ts-pattern.
+
 ## 0.3.1
 
 ### Patch Changes
