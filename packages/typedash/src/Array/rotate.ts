@@ -8,5 +8,4 @@ export const rotate = <T>(data: Array<T>): Array<T> =>
     O.fromPredicate(A.isNonEmpty),
     O.map(([first, ...rest]) => [...rest, first]),
     O.getOrElseW<Array<T>>(() => []),
-    (x) => x,
   )
