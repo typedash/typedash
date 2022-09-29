@@ -1183,7 +1183,7 @@ __metadata:
     ramda: 0.27.1
     ramda-adjunct: 2.35.0
     ts-jest: 27.0.7
-    ts-pattern: 3.3.5
+    ts-pattern: 4.0.4
     typescript: 4.2.4
     zod: ^3.19.1
   languageName: unknown
@@ -7351,10 +7351,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-pattern@npm:3.3.5":
-  version: 3.3.5
-  resolution: "ts-pattern@npm:3.3.5"
-  checksum: c6f7b9b9014b3f1a7c896267c1b227c7bea46bdc323dd66ac990e3b81f385aeb8abe5de2e694351fe13ae03c2dccb0e0a6869e43007cbe8516762700b309f43d
+"ts-pattern@npm:4.0.4":
+  version: 4.0.4
+  resolution: "ts-pattern@npm:4.0.4"
+  checksum: f239f835e61b42f28547e710ed4a7c1fb5a5561f64efa4612196a2ea361a200d1adb62b6d8b1e0656de0633bbfa034ffc999fe71ef705bf49456c756499f03f6
   languageName: node
   linkType: hard
 
