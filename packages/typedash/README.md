@@ -6,7 +6,6 @@ functions without needing to know which underlying package it's coming from.
 Everything in this package should be curried/auto-curried, take data last, follow similar patterns as `lodash/fp`, `ramda`, `ramda-adjunct`, `fp-ts`,
 and have thorough test coverage.
 
-
 ## Organization
 
 Utility functions are organized based on the type of data they work on. If they don't fit into a group (`pipe`, `flow`, `ifElse`, etc) then they will be exported as bare functions at the root. To encourage cohesiveness, modules have been collected and exported under a reserved abbreviation. See below for the mapping. In each module, you'll find a `_external.ts` file that houses all the external methods we're re-exporting. Any custom methods that aren't covered by the utils mentioned above are alongside that with tests and exported from the `index.ts`. The root of the `src` directory enforces common abbreviations that are loosely tied to how `fp-ts` organizes itself.

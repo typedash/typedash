@@ -50,7 +50,6 @@ export {
   replicate, // R.repeat
   reverse,
   size,
-  sort,
   splitAt,
   tail,
   takeLeft,
@@ -75,7 +74,7 @@ export {
   zipAll,
 } from 'fp-ts-std/Array'
 
-export { includes, sortBy, groupWith, groupBy, uniq, uniqBy } from 'ramda'
+export { includes, sort, sortBy, groupWith, groupBy, uniq, uniqBy } from 'ramda'
 
 export {
   included,
