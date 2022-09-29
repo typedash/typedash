@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 0.3.1
+
+### Patch Changes
+
+- e7b7f88: `A.sort` from ramda.
+
 ## 0.3.0
 
 ### Minor Changes
