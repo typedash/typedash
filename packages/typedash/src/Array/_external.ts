@@ -50,6 +50,7 @@ export {
   replicate, // R.repeat
   reverse,
   size,
+  sortBy as sortByOrd,
   splitAt,
   tail,
   takeLeft,
