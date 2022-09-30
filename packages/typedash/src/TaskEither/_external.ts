@@ -76,7 +76,7 @@ export {
   fromIO,
   fromIOEither,
   fromOption,
-  fromTask,
+  // fromTask, // @see: `./fromTask.ts`
   fromTaskOption,
   ApT,
   Do,

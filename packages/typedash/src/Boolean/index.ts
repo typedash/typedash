@@ -1,1 +1,5 @@
 export * from './_external'
+export * from './equals'
+export * from './fromString'
+export * from './isFalse'
+export * from './isTrue'
