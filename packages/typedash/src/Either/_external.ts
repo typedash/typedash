@@ -80,4 +80,4 @@ export {
 
 export type { Either, Left, Right } from 'fp-ts/Either'
 
-export { unsafeUnwrap } from 'fp-ts-std/Option'
+export { unsafeUnwrap } from 'fp-ts-std/Either'
