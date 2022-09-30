@@ -18,6 +18,7 @@ export {
   trimRight,
 } from 'fp-ts/string'
 
+// https://samhh.github.io/fp-ts-std/modules/String.ts.html
 export {
   append,
   dropLeft,
