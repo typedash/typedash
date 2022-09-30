@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.0.1
+
+### Patch Changes
+
+- 49de04b: 🔤 Fix E.unsafeUnwrap
+
 ## 1.0.0
 
 ### Major Changes
