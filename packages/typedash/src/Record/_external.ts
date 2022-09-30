@@ -1,5 +1,7 @@
 // https://gcanti.github.io/fp-ts/modules/Record.ts.html
 export {
+  compact,
+  separate,
   mapWithIndex,
   filter,
   filterMap,
@@ -18,17 +20,60 @@ export {
   map,
   modifyAt,
   pop,
-  reduce,
   reduceWithIndex,
   size,
   some,
   toArray,
   updateAt,
+  foldMap,
+  reduce,
+  reduceRight,
+  wilt,
+  wither,
+  difference,
+  flap,
+  intersection,
+  union,
+  upsertAt,
+  getDifferenceMagma,
+  getEq,
+  getFoldable,
+  getFoldableWithIndex,
+  getIntersectionSemigroup,
+  getMonoid,
+  getShow,
+  getTraversable,
+  getTraversableWithIndex,
+  getUnionMonoid,
+  getUnionSemigroup,
+  getWitherable,
 } from 'fp-ts/Record'
 
-export { pick, omit, invertAll, merge, reject, values } from 'fp-ts-std/Record'
+export {
+  pick,
+  omit,
+  invertAll,
+  merge,
+  reject,
+  values,
+  invertLast,
+  lookupV,
+  pickFrom,
+} from 'fp-ts-std/Record'
 
-export { mergeDeepLeft, mergeDeepRight, where, whereEq, mergeAll } from 'ramda'
+export {
+  assoc,
+  mergeAll,
+  mergeDeepLeft,
+  mergeDeepRight,
+  mergeLeft,
+  mergeRight,
+  objOf as of,
+  where,
+  whereEq,
+} from 'ramda'
+
+export { omitBy } from 'ramda-adjunct'
 
 /**
  * @description Deprecated.
@@ -77,3 +122,9 @@ export const propOr = (): undefined => undefined
  * ) // [{ foo: 'bar' }]
  */
 export const propEq = (): undefined => undefined
+
+/**
+ * @description Deprecated
+ * @deprecated Use `R.of`
+ */
+export const singleton = () => undefined

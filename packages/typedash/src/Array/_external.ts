@@ -84,4 +84,5 @@ export {
   lengthLt,
   lengthLte,
   lengthNotEq,
+  isNotEmpty,
 } from 'ramda-adjunct'

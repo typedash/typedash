@@ -38,3 +38,5 @@ export {
   traverseSeqArrayWithIndex,
 } from 'fp-ts/Task'
 export type { Task } from 'fp-ts/Task'
+
+export { sleep, elapsed, execute, unless, when } from 'fp-ts-std/Task'

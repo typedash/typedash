@@ -1182,6 +1182,7 @@ __metadata:
     prettier: 2.5.1
     ramda: 0.27.1
     ramda-adjunct: 2.35.0
+    spectacles-ts: ^1.0.7
     ts-jest: 27.0.7
     ts-pattern: 4.0.4
     typescript: 4.2.4
@@ -5617,6 +5618,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"monocle-ts@npm:^2.3.5":
+  version: 2.3.13
+  resolution: "monocle-ts@npm:2.3.13"
+  peerDependencies:
+    fp-ts: ^2.5.0
+  checksum: dddfa5706fe1fdb068606f5ac5215a00e723d155407de491bb53591264e281ec0ea1735759db93686d9daf676b105660bf2c656ebcd51626a4bfbb8de9accb3c
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -6951,6 +6961,17 @@ __metadata:
   version: 3.0.11
   resolution: "spdx-license-ids@npm:3.0.11"
   checksum: 1da1acb090257773e60b022094050e810ae9fec874dc1461f65dc0400cd42dd830ab2df6e64fb49c2db3dce386dd0362110780e1b154db7c0bb413488836aaeb
+  languageName: node
+  linkType: hard
+
+"spectacles-ts@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "spectacles-ts@npm:1.0.7"
+  dependencies:
+    monocle-ts: ^2.3.5
+  peerDependencies:
+    fp-ts: ^2.11.1
+  checksum: 690b8ad9c23cc52609f80ed77556b33d3101aebb7aa486adbfef6f004d361b85c6c10ffa668b9b8ec1d2d2b0626080ce6fa6fdf9e07e7de762c7ca4c649d2708
   languageName: node
   linkType: hard
 

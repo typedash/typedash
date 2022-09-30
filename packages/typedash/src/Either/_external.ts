@@ -1,5 +1,6 @@
 // https://gcanti.github.io/fp-ts/modules/Either.ts.html
 export {
+  Apply,
   apFirst,
   apFirstW,
   apSecond,

@@ -55,4 +55,7 @@ export {
   unsurround,
 } from 'fp-ts-std/String'
 
-export { concat } from 'ramda'
+export { equals, concat } from 'ramda'
+
+// TODO: Replace with something else
+export { toInteger } from 'lodash/fp'
