@@ -1,5 +1,19 @@
 # @typedash/typedash
 
+## 1.0.0
+
+### Major Changes
+
+- 07633e5: 🚢 Import Methods.
+
+### Minor Changes
+
+- 2eec324: 🚢 Flesh out externals- More fp-ts, fp-ts-std, ramda methods.
+
+### Patch Changes
+
+- dc788ee: 🚢 Explicit exports.
+
 ## 0.4.1
 
 ### Patch Changes
