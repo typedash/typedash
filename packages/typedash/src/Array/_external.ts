@@ -60,6 +60,7 @@ export {
   zip,
   zipWith,
   updateAt,
+  uniq as uniqEq,
 } from 'fp-ts/Array'
 
 export {
