@@ -3,9 +3,18 @@
     "bimap",
     "changesets",
     "esbuild",
+    "juxt",
+    "Monoid",
     "newtype",
     "Semigroup",
+    "taskify",
+    "tupled",
     "typedash",
+    "unappend",
+    "unlines",
+    "unprepend",
+    "unsurround",
+    "untupled",
     "yarnpkg"
   ],
   "search.exclude": {
