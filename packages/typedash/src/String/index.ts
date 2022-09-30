@@ -1,3 +1,6 @@
 export * from './_external'
 export * from './getPropBySpec'
 export * from './isNotEmpty'
+export * from './removeSpecialCharacters'
+export * from './stringify'
+export * from './toBoolean'

@@ -18,6 +18,7 @@ export {
   tupled,
   untupled,
 } from 'fp-ts/function'
+export type { Lazy } from 'fp-ts/function'
 
 export { and, not, or } from 'fp-ts/Predicate'
 
@@ -39,7 +40,7 @@ export {
   times, // NOTE: Maybe should go to the Array module?
 } from 'ramda'
 
-export { defaultWhen, inRange } from 'ramda-adjunct'
+export { defaultWhen, inRange, isArray } from 'ramda-adjunct'
 
 export { default as isArguments } from 'lodash/isArguments'
 export { default as isArrayBuffer } from 'lodash/isArrayBuffer'
