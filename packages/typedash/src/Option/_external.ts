@@ -1,5 +1,6 @@
 // https://gcanti.github.io/fp-ts/modules/Option.ts.html
 export {
+  Apply,
   apFirst,
   apSecond,
   chainEitherK,
@@ -72,4 +73,12 @@ export {
 } from 'fp-ts/Option'
 export type { Option, Some, None } from 'fp-ts/Option'
 
-export { unsafeUnwrap } from 'fp-ts-std/Option'
+export {
+  unsafeUnwrap,
+  invert,
+  memptyUnless,
+  memptyWhen,
+  noneAs,
+  pureIf,
+  toMonoid,
+} from 'fp-ts-std/Option'

@@ -2,8 +2,10 @@
   "cSpell.words": [
     "bimap",
     "changesets",
+    "contramap",
     "esbuild",
     "juxt",
+    "mempty",
     "Monoid",
     "newtype",
     "Semigroup",
@@ -15,6 +17,7 @@
     "unprepend",
     "unsurround",
     "untupled",
+    "Witherable",
     "yarnpkg"
   ],
   "search.exclude": {

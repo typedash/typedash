@@ -1729,6 +1729,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],
             ["ramda", "npm:0.27.1"],
             ["ramda-adjunct", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.35.0"],
+            ["spectacles-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7"],
             ["ts-jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.0.7"],
             ["ts-pattern", "npm:4.0.4"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=493e53"],
@@ -6988,6 +6989,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:2.3.13", {
+          "packageLocation": "./.yarn/cache/monocle-ts-npm-2.3.13-62cec035ff-dddfa5706f.zip/node_modules/monocle-ts/",
+          "packageDependencies": [
+            ["monocle-ts", "npm:2.3.13"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:251d45b1d47d54216e78c5784efbc77d1f9c66583115910d861af2322d2b65f5ce18b13fe59f266557b0ec9f02d9f77ae29723d6e4ad85fd5b7041ba2352a479#npm:2.3.13", {
+          "packageLocation": "./.yarn/__virtual__/monocle-ts-virtual-b3611142bf/0/cache/monocle-ts-npm-2.3.13-62cec035ff-dddfa5706f.zip/node_modules/monocle-ts/",
+          "packageDependencies": [
+            ["monocle-ts", "virtual:251d45b1d47d54216e78c5784efbc77d1f9c66583115910d861af2322d2b65f5ce18b13fe59f266557b0ec9f02d9f77ae29723d6e4ad85fd5b7041ba2352a479#npm:2.3.13"],
+            ["@types/fp-ts", null],
+            ["fp-ts", "npm:2.12.3"]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "fp-ts"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12", {
           "packageLocation": "./.yarn/__virtual__/monocle-ts-virtual-85b8cf8767/0/cache/monocle-ts-npm-2.3.12-9960dd34cc-64342db9c3.zip/node_modules/monocle-ts/",
           "packageDependencies": [
@@ -8499,6 +8520,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/spdx-license-ids-npm-3.0.11-a8d9a5ff74-1da1acb090.zip/node_modules/spdx-license-ids/",
           "packageDependencies": [
             ["spdx-license-ids", "npm:3.0.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["spectacles-ts", [
+        ["npm:1.0.7", {
+          "packageLocation": "./.yarn/cache/spectacles-ts-npm-1.0.7-6deaba5185-690b8ad9c2.zip/node_modules/spectacles-ts/",
+          "packageDependencies": [
+            ["spectacles-ts", "npm:1.0.7"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7", {
+          "packageLocation": "./.yarn/__virtual__/spectacles-ts-virtual-251d45b1d4/0/cache/spectacles-ts-npm-1.0.7-6deaba5185-690b8ad9c2.zip/node_modules/spectacles-ts/",
+          "packageDependencies": [
+            ["spectacles-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7"],
+            ["@types/fp-ts", null],
+            ["fp-ts", "npm:2.12.3"],
+            ["monocle-ts", "virtual:251d45b1d47d54216e78c5784efbc77d1f9c66583115910d861af2322d2b65f5ce18b13fe59f266557b0ec9f02d9f77ae29723d6e4ad85fd5b7041ba2352a479#npm:2.3.13"]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "fp-ts"
           ],
           "linkType": "HARD",
         }]
