@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.0.3
+
+### Patch Changes
+
+- 9a9778f: 🦄 uniqEq.
+
 ## 1.0.2
 
 ### Patch Changes
