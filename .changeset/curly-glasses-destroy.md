@@ -1,5 +1,0 @@
----
-'@typedash/typedash': patch
----
-
-⛵ sortByOrd.

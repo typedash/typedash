@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.0.2
+
+### Patch Changes
+
+- 1fcc9f0: ⛵ sortByOrd.
+
 ## 1.0.1
 
 ### Patch Changes
