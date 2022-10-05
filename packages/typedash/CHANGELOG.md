@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.1.0
+
+### Minor Changes
+
+- da76e12: Add `A.foldMap`, `N.MonoidSum`, `N.MonoidProduct`.
+
 ## 1.0.3
 
 ### Patch Changes
