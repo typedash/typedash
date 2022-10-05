@@ -27,6 +27,7 @@ export {
   findLastIndex,
   findLastMap,
   flatten,
+  foldMap,
   fromPredicate,
   head,
   init,

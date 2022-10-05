@@ -1,4 +1,4 @@
-export { Ord, isNumber, Eq } from 'fp-ts/number'
+export { Eq, isNumber, MonoidProduct, MonoidSum, Ord } from 'fp-ts/number'
 export {
   add,
   decrement,
