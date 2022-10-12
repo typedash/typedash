@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.1.1
+
+### Patch Changes
+
+- cb184c3: ❌ Remove `stringify-object` dependency.
+
 ## 1.1.0
 
 ### Minor Changes
