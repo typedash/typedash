@@ -15,11 +15,11 @@ class Foo {
   }
 }
 
-test('should be a func', () => {
+test.skip('should be a func', () => {
   expect(stringify).toEqual(expect.any(Function))
 })
 
-test.each<[unknown, string]>([
+test.skip.each<[unknown, string]>([
   [42, '42'],
   ['foo', "'foo'"],
   [true, 'true'],
