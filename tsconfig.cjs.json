@@ -1,5 +1,5 @@
 {
-  "extends": "@typedash/tsconfig/tsconfig.cjs.json",
+  "extends": "./packages/tsconfig/tsconfig.cjs.json",
   "compilerOptions": {
     "rootDir": ".",
     "paths": {

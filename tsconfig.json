@@ -1,5 +1,6 @@
 {
-  "extends": "@typedash/tsconfig/tsconfig.json",
+  // "extends": "@typedash/tsconfig/tsconfig.json",
+  "extends": "./packages/tsconfig/tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
