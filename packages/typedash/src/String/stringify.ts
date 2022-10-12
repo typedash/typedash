@@ -1,4 +1,4 @@
-import stringifyObject from 'stringify-object'
+// import stringifyObject from 'stringify-object'
 import { P, match } from 'ts-pattern'
 import * as A from '../Array/_external'
 import { isArray, isFunction, pipe } from '../function/_external'
@@ -10,7 +10,8 @@ const stringifyArray = (data: Array<unknown>) =>
 const stringifyObject_ = <T>(data: Exclude<T, Array<unknown>>) =>
   // eslint-disable-next-line max-len
   // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-call
-  stringifyObject(data, { indent: '  ', inlineCharacterLimit: 50 })
+  // stringifyObject(data, { indent: '  ', inlineCharacterLimit: 50 })
+  JSON.stringify(data)
 
 /**
  * @description

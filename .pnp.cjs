@@ -1790,7 +1790,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.3"],
             ["@types/lodash", "npm:4.14.177"],
             ["@types/ramda", "npm:0.27.1"],
-            ["@types/stringify-object", "npm:4.0.1"],
             ["eslint", "npm:8.9.0"],
             ["fp-ts", "npm:2.12.3"],
             ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],
@@ -1804,7 +1803,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ramda", "npm:0.27.1"],
             ["ramda-adjunct", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.35.0"],
             ["spectacles-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7"],
-            ["stringify-object", "npm:4.0.1"],
             ["ts-jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.0.7"],
             ["ts-pattern", "npm:4.0.4"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=493e53"],
@@ -2030,15 +2028,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-stack-utils-npm-2.0.1-867718ab70-205fdbe332.zip/node_modules/@types/stack-utils/",
           "packageDependencies": [
             ["@types/stack-utils", "npm:2.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["@types/stringify-object", [
-        ["npm:4.0.1", {
-          "packageLocation": "./.yarn/cache/@types-stringify-object-npm-4.0.1-72b8c1754b-5c30bb6604.zip/node_modules/@types/stringify-object/",
-          "packageDependencies": [
-            ["@types/stringify-object", "npm:4.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -5601,13 +5590,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-obj", "npm:1.0.1"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/is-obj-npm-3.0.0-c086cba90c-75e97a99ed.zip/node_modules/is-obj/",
-          "packageDependencies": [
-            ["is-obj", "npm:3.0.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["is-plain-obj", [
@@ -5644,13 +5626,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-regexp-npm-1.0.0-8f95f51a0c-be692828e2.zip/node_modules/is-regexp/",
           "packageDependencies": [
             ["is-regexp", "npm:1.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:3.1.0", {
-          "packageLocation": "./.yarn/cache/is-regexp-npm-3.1.0-37cc68b2d3-d39dbd9892.zip/node_modules/is-regexp/",
-          "packageDependencies": [
-            ["is-regexp", "npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8890,16 +8865,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["get-own-enumerable-property-symbols", "npm:3.0.2"],
             ["is-obj", "npm:1.0.1"],
             ["is-regexp", "npm:1.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:4.0.1", {
-          "packageLocation": "./.yarn/cache/stringify-object-npm-4.0.1-47b9ca5893-97fc5473bc.zip/node_modules/stringify-object/",
-          "packageDependencies": [
-            ["stringify-object", "npm:4.0.1"],
-            ["get-own-enumerable-property-symbols", "npm:3.0.2"],
-            ["is-obj", "npm:3.0.0"],
-            ["is-regexp", "npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]

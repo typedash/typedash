@@ -1225,7 +1225,6 @@ __metadata:
     "@types/jest": 27.0.3
     "@types/lodash": 4.14.177
     "@types/ramda": 0.27.1
-    "@types/stringify-object": ^4.0.1
     eslint: 8.9.0
     fp-ts: ^2.12.3
     fp-ts-std: 0.13.1
@@ -1239,7 +1238,6 @@ __metadata:
     ramda: 0.27.1
     ramda-adjunct: 2.35.0
     spectacles-ts: ^1.0.7
-    stringify-object: ^4.0.1
     ts-jest: 27.0.7
     ts-pattern: 4.0.4
     typescript: 4.2.4
@@ -1431,13 +1429,6 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
-  languageName: node
-  linkType: hard
-
-"@types/stringify-object@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@types/stringify-object@npm:4.0.1"
-  checksum: 5c30bb6604ff903bf0e5ddd90cceef289f836a6607d55c622abb7d77c6c569ab0928b456ecb6291b1556a60bfbbba62714013fb418837a086f79bb76f56901ba
   languageName: node
   linkType: hard
 
@@ -3831,7 +3822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-own-enumerable-property-symbols@npm:^3.0.0, get-own-enumerable-property-symbols@npm:^3.0.2":
+"get-own-enumerable-property-symbols@npm:^3.0.0":
   version: 3.0.2
   resolution: "get-own-enumerable-property-symbols@npm:3.0.2"
   checksum: 8f0331f14159f939830884799f937343c8c0a2c330506094bc12cbee3665d88337fe97a4ea35c002cc2bdba0f5d9975ad7ec3abb925015cdf2a93e76d4759ede
@@ -4371,13 +4362,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-obj@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "is-obj@npm:3.0.0"
-  checksum: 75e97a99ed0b0884778887f8e913791864151307774914283b068b06b57ca86f695b024aa1ba5ed04411918edef93e2bfd8f84d68c6b6aab417802cc76f5061b
-  languageName: node
-  linkType: hard
-
 "is-plain-obj@npm:^1.1.0":
   version: 1.1.0
   resolution: "is-plain-obj@npm:1.1.0"
@@ -4406,13 +4390,6 @@ __metadata:
   version: 1.0.0
   resolution: "is-regexp@npm:1.0.0"
   checksum: be692828e24cba479ec33644326fa98959ec68ba77965e0291088c1a741feaea4919d79f8031708f85fd25e39de002b4520622b55460660b9c369e6f7187faef
-  languageName: node
-  linkType: hard
-
-"is-regexp@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "is-regexp@npm:3.1.0"
-  checksum: d39dbd9892f0a25d01ee1a8e650c3f2e045bf7b1fa87eafb50b31dd29342869aa9135fd372628202254398956bf7f4b62094bdda39283ec2a9bb749fbb7f427c
   languageName: node
   linkType: hard
 
@@ -7291,17 +7268,6 @@ __metadata:
     is-obj: ^1.0.1
     is-regexp: ^1.0.0
   checksum: 6827a3f35975cfa8572e8cd3ed4f7b262def260af18655c6fde549334acdac49ddba69f3c861ea5a6e9c5a4990fe4ae870b9c0e6c31019430504c94a83b7a154
-  languageName: node
-  linkType: hard
-
-"stringify-object@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "stringify-object@npm:4.0.1"
-  dependencies:
-    get-own-enumerable-property-symbols: ^3.0.2
-    is-obj: ^3.0.0
-    is-regexp: ^3.0.0
-  checksum: 97fc5473bc726effe8b39e7eb96009fc573716497a0b00005bb68250150c4d086682356f4cee1823d404ac40ac36c0e643d5b9960ecfd3e96bb1ae20225e467b
   languageName: node
   linkType: hard
 
