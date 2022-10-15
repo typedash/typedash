@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.2.0
+
+### Minor Changes
+
+- 64ad4a8: Add `TO` (`TaskOption`).
+
 ## 1.1.1
 
 ### Patch Changes
