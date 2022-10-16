@@ -1,5 +1,7 @@
 // https://gcanti.github.io/fp-ts/modules/TaskEither.ts.html
 export {
+  alt,
+  altW,
   ap,
   apW,
   bimap,
