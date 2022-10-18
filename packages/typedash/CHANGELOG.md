@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.4.0
+
+### Minor Changes
+
+- 7f8f0cf: ⛓️ Array And Apply Externals
+
 ## 1.3.0
 
 ### Minor Changes
