@@ -1,5 +1,15 @@
 # @typedash/typedash
 
+## 1.5.0
+
+### Minor Changes
+
+- 23afbd6: 🔄 Renamed `A.rotate` -> `A.rotateLeft`, exposed `A.rotate` from `fp-ts`
+
+### Patch Changes
+
+- b7772c3: 👨‍🚀 Added `S.isSpace`.
+
 ## 1.4.0
 
 ### Minor Changes
