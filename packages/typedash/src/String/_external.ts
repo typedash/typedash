@@ -54,6 +54,7 @@ export {
   unlines,
   unprepend,
   unsurround,
+  isSpace,
 } from 'fp-ts-std/String'
 
 export { equals, concat } from 'ramda'
