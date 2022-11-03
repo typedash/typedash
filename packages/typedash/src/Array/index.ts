@@ -1,5 +1,5 @@
 export * from './_external'
 export * from './partitionAll'
-export * from './rotate'
+export * from './rotateLeft'
 export * from './shuffle'
 export * from './shuffleWithSeed'
