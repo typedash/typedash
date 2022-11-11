@@ -1,4 +1,3 @@
-// https://gcanti.github.io/fp-ts/modules/NonEmptyArray.ts.html
 export {
   alt,
   altW,
@@ -16,7 +15,6 @@ export {
   concat,
   concatAll,
   concatW,
-  copy,
   duplicate,
   extend,
   extract,
@@ -27,7 +25,7 @@ export {
   foldMap,
   foldMapWithIndex,
   fromArray,
-  fromReadonlyNonEmptyArray,
+  fromReadonlyArray,
   getEq,
   getSemigroup,
   getShow,
@@ -45,8 +43,8 @@ export {
   mapWithIndex,
   matchLeft,
   matchRight,
-  max as maxOrd,
-  min as minOrd,
+  max,
+  min,
   modifyAt,
   modifyHead,
   modifyLast,
@@ -69,7 +67,7 @@ export {
   traverseWithIndex,
   unappend,
   union,
-  uniq as uniqEq,
+  uniq,
   unprepend,
   unzip,
   updateAt,
@@ -77,18 +75,9 @@ export {
   updateLast,
   zip,
   zipWith,
-} from 'fp-ts/NonEmptyArray'
+} from 'fp-ts/ReadonlyNonEmptyArray'
 
-export { includes, sort, sortBy, groupWith, uniq, uniqBy } from 'ramda'
+export { join, includes, sort, sortBy } from 'ramda'
+export { included } from 'ramda-adjunct'
 
-export {
-  included,
-  lengthEq,
-  lengthGt,
-  lengthGte,
-  lengthLt,
-  lengthLte,
-  lengthNotEq,
-} from 'ramda-adjunct'
-
-export type { NonEmptyArray } from 'fp-ts/NonEmptyArray'
+export type { ReadonlyNonEmptyArray } from 'fp-ts/ReadonlyNonEmptyArray'
