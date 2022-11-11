@@ -1,6 +1,6 @@
 {
   "name": "@typedash/fs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "`fp-ts` compliant `fs-extra` wrappers",
   "sideEffects": false,
   "files": [
