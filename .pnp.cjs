@@ -27,6 +27,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/eslint-config-typedash"
       },
       {
+        "name": "@typedash/fs",
+        "reference": "workspace:packages/fs"
+      },
+      {
         "name": "@typedash/prettier",
         "reference": "workspace:packages/prettier"
       },
@@ -43,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@typedash/eslint-config-typedash", ["workspace:packages/eslint-config-typedash"]],
+      ["@typedash/fs", ["workspace:packages/fs"]],
       ["@typedash/prettier", ["workspace:packages/prettier"]],
       ["@typedash/tsconfig", ["virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#workspace:packages/tsconfig", "workspace:packages/tsconfig"]],
       ["@typedash/typedash", ["workspace:packages/typedash"]],
@@ -1640,6 +1645,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["virtual:3687bf30b82de9bb8c238f8b4b6dd7fa48cd15340bfd4d70b3de4421b6a570f2514d6311555440142bfdadc22a0312f0b5f9331e3aa2aa5413f769d8570d09e2#npm:2.0.2", {
+          "packageLocation": "./.yarn/__virtual__/@relmify-jest-fp-ts-virtual-6845938628/0/cache/@relmify-jest-fp-ts-npm-2.0.2-468bc80c33-1db5bb71c2.zip/node_modules/@relmify/jest-fp-ts/",
+          "packageDependencies": [
+            ["@relmify/jest-fp-ts", "virtual:3687bf30b82de9bb8c238f8b4b6dd7fa48cd15340bfd4d70b3de4421b6a570f2514d6311555440142bfdadc22a0312f0b5f9331e3aa2aa5413f769d8570d09e2#npm:2.0.2"],
+            ["@jest/expect-utils", "npm:28.1.3"],
+            ["@types/fp-ts", null],
+            ["@types/io-ts", null],
+            ["expect", "npm:28.1.3"],
+            ["fp-ts", null],
+            ["io-ts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19"],
+            ["jest-get-type", "npm:28.0.2"],
+            ["jest-matcher-utils", "npm:28.1.3"]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "@types/io-ts",
+            "fp-ts",
+            "io-ts"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.0.2", {
           "packageLocation": "./.yarn/__virtual__/@relmify-jest-fp-ts-virtual-497a8e27b1/0/cache/@relmify-jest-fp-ts-npm-2.0.2-468bc80c33-1db5bb71c2.zip/node_modules/@relmify/jest-fp-ts/",
           "packageDependencies": [
@@ -1743,6 +1769,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:4.3.0"],
             ["eslint-plugin-testing-library", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:5.0.5"],
             ["prettier", "npm:2.5.1"],
+            ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=493e53"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@typedash/fs", [
+        ["workspace:packages/fs", {
+          "packageLocation": "./packages/fs/",
+          "packageDependencies": [
+            ["@typedash/fs", "workspace:packages/fs"],
+            ["@relmify/jest-fp-ts", "virtual:3687bf30b82de9bb8c238f8b4b6dd7fa48cd15340bfd4d70b3de4421b6a570f2514d6311555440142bfdadc22a0312f0b5f9331e3aa2aa5413f769d8570d09e2#npm:2.0.2"],
+            ["@typedash/eslint-config-typedash", "workspace:packages/eslint-config-typedash"],
+            ["@typedash/prettier", "workspace:packages/prettier"],
+            ["@typedash/tsconfig", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#workspace:packages/tsconfig"],
+            ["@typedash/typedash", "workspace:packages/typedash"],
+            ["@types/fs-extra", "npm:9.0.13"],
+            ["@types/jest", "npm:27.0.3"],
+            ["eslint", "npm:8.9.0"],
+            ["fs-extra", "npm:10.1.0"],
+            ["io-ts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19"],
+            ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],
+            ["npm-run-all", "npm:4.1.5"],
+            ["onchange", "npm:7.1.0"],
+            ["prettier", "npm:2.5.1"],
+            ["ts-jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.0.7"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=493e53"]
           ],
           "linkType": "SOFT",
@@ -1863,6 +1914,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/babel__traverse", "npm:7.17.1"],
             ["@babel/types", "npm:7.18.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/fs-extra", [
+        ["npm:9.0.13", {
+          "packageLocation": "./.yarn/cache/@types-fs-extra-npm-9.0.13-12fb7badd7-add79e212a.zip/node_modules/@types/fs-extra/",
+          "packageDependencies": [
+            ["@types/fs-extra", "npm:9.0.13"],
+            ["@types/node", "npm:17.0.41"]
           ],
           "linkType": "HARD",
         }]
@@ -4841,6 +4902,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["fs-extra", [
+        ["npm:10.1.0", {
+          "packageLocation": "./.yarn/cache/fs-extra-npm-10.1.0-86573680ed-dc94ab3709.zip/node_modules/fs-extra/",
+          "packageDependencies": [
+            ["fs-extra", "npm:10.1.0"],
+            ["graceful-fs", "npm:4.2.10"],
+            ["jsonfile", "npm:6.1.0"],
+            ["universalify", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:7.0.1", {
           "packageLocation": "./.yarn/cache/fs-extra-npm-7.0.1-b33a5e53e9-141b9dccb2.zip/node_modules/fs-extra/",
           "packageDependencies": [
@@ -6578,6 +6649,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["jsonfile", "npm:4.0.0"],
             ["graceful-fs", "npm:4.2.10"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.1.0", {
+          "packageLocation": "./.yarn/cache/jsonfile-npm-6.1.0-20a4796cee-7af3b8e1ac.zip/node_modules/jsonfile/",
+          "packageDependencies": [
+            ["jsonfile", "npm:6.1.0"],
+            ["graceful-fs", "npm:4.2.10"],
+            ["universalify", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9437,6 +9517,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/universalify-npm-0.1.2-9b22d31d2d-40cdc60f6e.zip/node_modules/universalify/",
           "packageDependencies": [
             ["universalify", "npm:0.1.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/universalify-npm-2.0.0-03b8b418a8-2406a4edf4.zip/node_modules/universalify/",
+          "packageDependencies": [
+            ["universalify", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
