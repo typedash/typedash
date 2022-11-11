@@ -9,6 +9,7 @@
     "Monoid",
     "newtype",
     "relmify",
+    "RNEA",
     "Semigroup",
     "taskify",
     "tupled",

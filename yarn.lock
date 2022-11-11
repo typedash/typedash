@@ -1228,6 +1228,7 @@ __metadata:
     eslint: 8.9.0
     fp-ts: ^2.12.3
     fp-ts-std: 0.13.1
+    io-ts: ^2.2.19
     jest: 27.3.1
     lodash: 4.17.21
     monocle-ts: 2.3.12
@@ -4217,6 +4218,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"io-ts@npm:^2.2.19":
+  version: 2.2.19
+  resolution: "io-ts@npm:2.2.19"
+  peerDependencies:
+    fp-ts: ^2.5.0
+  checksum: fe6a0203e43a518529ed8ab562db382c25a91b64cb8ba87a3798a6a9f15c834eff69ca85eeb5f2d3196cf92af61fd368239e8c5da5dccd57bf3beed712e91075
+  languageName: node
+  linkType: hard
+
 "ip@npm:^1.1.5":
   version: 1.1.8
   resolution: "ip@npm:1.1.8"
@@ -6824,6 +6834,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.3.0
     eslint-plugin-testing-library: 5.0.5
     husky: 6.0.0
+    io-ts: ^2.2.19
     jest: 27.3.1
     lint-staged: 10.5.4
     npm-run-all: 4.1.5

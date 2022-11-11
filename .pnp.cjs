@@ -76,6 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:4.3.0"],
             ["eslint-plugin-testing-library", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:5.0.5"],
             ["husky", "npm:6.0.0"],
+            ["io-ts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19"],
             ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],
@@ -1648,7 +1649,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/io-ts", null],
             ["expect", "npm:28.1.3"],
             ["fp-ts", "npm:2.12.3"],
-            ["io-ts", null],
+            ["io-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.2.19"],
             ["jest-get-type", "npm:28.0.2"],
             ["jest-matcher-utils", "npm:28.1.3"]
           ],
@@ -1793,6 +1794,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.9.0"],
             ["fp-ts", "npm:2.12.3"],
             ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],
+            ["io-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.2.19"],
             ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],
             ["lodash", "npm:4.17.21"],
             ["monocle-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12"],
@@ -5421,6 +5423,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["io-ts", [
+        ["npm:2.2.19", {
+          "packageLocation": "./.yarn/cache/io-ts-npm-2.2.19-f421c29ada-fe6a0203e4.zip/node_modules/io-ts/",
+          "packageDependencies": [
+            ["io-ts", "npm:2.2.19"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19", {
+          "packageLocation": "./.yarn/__virtual__/io-ts-virtual-c9d58f970d/0/cache/io-ts-npm-2.2.19-f421c29ada-fe6a0203e4.zip/node_modules/io-ts/",
+          "packageDependencies": [
+            ["io-ts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19"],
+            ["@types/fp-ts", null],
+            ["fp-ts", null]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "fp-ts"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.2.19", {
+          "packageLocation": "./.yarn/__virtual__/io-ts-virtual-8cce354c6d/0/cache/io-ts-npm-2.2.19-f421c29ada-fe6a0203e4.zip/node_modules/io-ts/",
+          "packageDependencies": [
+            ["io-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.2.19"],
+            ["@types/fp-ts", null],
+            ["fp-ts", "npm:2.12.3"]
+          ],
+          "packagePeers": [
+            "@types/fp-ts",
+            "fp-ts"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ip", [
         ["npm:1.1.8", {
           "packageLocation": "./.yarn/cache/ip-npm-1.1.8-abea558b72-a2ade53eb3.zip/node_modules/ip/",
@@ -8364,6 +8401,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-hooks", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:4.3.0"],
             ["eslint-plugin-testing-library", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#npm:5.0.5"],
             ["husky", "npm:6.0.0"],
+            ["io-ts", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:2.2.19"],
             ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],
             ["lint-staged", "npm:10.5.4"],
             ["npm-run-all", "npm:4.1.5"],

@@ -10,7 +10,7 @@ export {
   replace,
   size,
   slice,
-  split,
+  split as splitRNEA,
   startsWith,
   toLowerCase,
   toUpperCase,
