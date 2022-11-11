@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.6.0
+
+### Minor Changes
+
+- 051bf18: 🔢 Added RNEA, ergonomic A.split, A.from\* methods, fixed S.stringify
+
 ## 1.5.0
 
 ### Minor Changes
