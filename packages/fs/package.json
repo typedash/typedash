@@ -1,0 +1,50 @@
+{
+  "name": "@typedash/fs",
+  "version": "0.0.0",
+  "description": "`fp-ts` compliant `fs-extra` wrappers",
+  "sideEffects": false,
+  "files": [
+    "src",
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "prepublish": "yarn build",
+    "clean": "rm -rf dist",
+    "build": "echo \"Building...\" && yarn clean && run-p build:cjs build:esm && echo \"Done building!\"",
+    "build:cjs": "yarn tsc --build ./tsconfig.cjs.json",
+    "build:esm": "yarn tsc --build ./tsconfig.json",
+    "dev": "onchange -i \"src/**/*.ts\" -- yarn build",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write . !./dist",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  },
+  "dependencies": {
+    "@typedash/typedash": "1.6.0",
+    "fs-extra": "^10.1.0"
+  },
+  "devDependencies": {
+    "@relmify/jest-fp-ts": "^2.0.2",
+    "@typedash/eslint-config-typedash": "0.0.1",
+    "@typedash/prettier": "0.0.1",
+    "@typedash/tsconfig": "0.0.1",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "27.0.3",
+    "eslint": "8.9.0",
+    "io-ts": "^2.2.19",
+    "jest": "27.3.1",
+    "npm-run-all": "4.1.5",
+    "onchange": "7.1.0",
+    "prettier": "2.5.1",
+    "ts-jest": "27.0.7",
+    "typescript": "4.2.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
