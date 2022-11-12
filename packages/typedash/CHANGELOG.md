@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.9.1
+
+### Patch Changes
+
+- 7730570: 🪵 'function.log' methods log Error objects better
+
 ## 1.9.0
 
 ### Minor Changes
