@@ -1,14 +1,16 @@
 /* eslint-disable no-console */
+import { log } from './log'
 
 /**
+ * @description log data and return it unchanged
  * @example
  * pipe(
  *   'foo',
- *   tapLog,
- *   // still 'foo'
- * )
+ *   tapLog, // console.log('foo')
+ *   S.toUpperCase,
+ * ) // 'FOO'
  */
 export const tapLog = <T>(data: T) => {
-  console.log(JSON.stringify(data, null, 4))
+  log(data)
   return data
 }

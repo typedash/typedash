@@ -1,12 +1,15 @@
 /* eslint-disable no-console */
+import { stringify as S_stringify } from '../String/stringify'
 
 /**
+ * @description Use it like `console.log`, with a tag
  * @example
- * const foo = (data: unknown) => {
- *   logTag('hi mom', data)
+ * const fn = (data: string) => {
+ *   log('tag')(data)
+ *   ...
  * }
  */
 export const logTag =
   (tag: string) =>
   <T>(data: T) =>
-    console.log(tag, JSON.stringify(data, null, 4))
+    console.log(tag, S_stringify(data))

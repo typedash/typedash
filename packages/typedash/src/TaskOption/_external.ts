@@ -27,7 +27,8 @@ export {
   match,
   matchE,
   matchEW,
+  matchW,
   none,
   some,
-  matchW,
 } from 'fp-ts/TaskOption'
+export type { TaskOption } from 'fp-ts/TaskOption'

@@ -1,12 +1,13 @@
 import { logTag } from './logTag'
 
 /**
+ * @description log data with a tag and return it unchanged
  * @example
  * pipe(
  *   'foo',
- *   tapLogTag('MY LOG'),
- *   // still 'foo'
- * )
+ *   logTag('tag'), // console.log('tag', 'foo')
+ *   S.toUpperCase,
+ * ) // 'FOO'
  */
 export const tapLogTag =
   (tag: string) =>
