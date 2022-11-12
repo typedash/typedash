@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.8.2
+
+### Patch Changes
+
+- e4c4c29: 🧹 Cleanup
+
 ## 1.8.1
 
 ### Patch Changes
