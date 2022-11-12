@@ -1,12 +1,12 @@
 // https://gcanti.github.io/fp-ts/modules/string.ts.html
 export {
-  Ord,
   empty,
   endsWith,
   Eq,
   includes,
   isEmpty,
   isString,
+  Ord,
   replace,
   size,
   slice,
