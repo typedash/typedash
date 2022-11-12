@@ -1,6 +1,6 @@
 {
   "name": "@typedash/fs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "`fp-ts` compliant `fs-extra` wrappers",
   "sideEffects": false,
   "files": [
@@ -24,7 +24,7 @@
     "test:watch": "echo \"N/A\""
   },
   "dependencies": {
-    "@typedash/typedash": "1.8.2",
+    "@typedash/typedash": "1.9.0",
     "fs-extra": "^10.1.0"
   },
   "devDependencies": {

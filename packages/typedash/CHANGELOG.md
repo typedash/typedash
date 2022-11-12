@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.9.0
+
+### Minor Changes
+
+- f64321d: 🪵 Added missing log function
+
 ## 1.8.2
 
 ### Patch Changes
