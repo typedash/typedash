@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.8.0
+
+### Minor Changes
+
+- 5e9d019: 🪵 Log and error method consistency
+
 ## 1.7.0
 
 ### Minor Changes
