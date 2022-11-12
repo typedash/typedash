@@ -1,3 +1,6 @@
 export * from './_external'
 export * from './all'
 export * from './allObj'
+export * from './log'
+export * from './logTag'
+export * from './tap'
