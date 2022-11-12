@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.7.0
+
+### Minor Changes
+
+- a61810c: 🍎 Add Applicative to each module
+
 ## 1.6.0
 
 ### Minor Changes
