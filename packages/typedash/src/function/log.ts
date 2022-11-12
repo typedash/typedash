@@ -8,5 +8,8 @@
  *   log(data)
  *   ...
  * }
+ * @todo
+ * Use `stringify`. It errors with:
+ * "Cannot find module t". Likely a circular dep.
  */
-export const log = <T>(data: T) => console.log(JSON.stringify(data, null, 2))
+export const log = <T>(data: T) => console.log(data)

@@ -8,8 +8,11 @@
  *   log('tag')(data)
  *   ...
  * }
+ * @todo
+ * Use `stringify`. It errors with:
+ * "Cannot find module t". Likely a circular dep.
  */
 export const logTag =
   (tag: string) =>
   <T>(data: T) =>
-    console.log(tag, JSON.stringify(data, null, 2))
+    console.log(tag, data)
