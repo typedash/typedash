@@ -5,15 +5,15 @@ import type { Option } from './_external'
 
 /**
  * @description
- *   Constructs an Option by using a Zod Type to `parse` some
- *   data and then translate the result.
+ * Constructs an Option by using a Zod Type to `parse` some
+ * data and then translate the result.
  *
  * @example
- *   pipe(
- *     'foo',
- *     O.fromZodParse(z.string),
- *     O.map(...) // data is 'foo'
- *   )
+ * pipe(
+ *   'foo',
+ *   O.fromZodParse(z.string),
+ *   O.map(...) // data is 'foo'
+ * )
  */
 export const fromZodParse =
   <T extends ZodTypeAny>(schema: T, safeParams?: Partial<ParseParams>) =>

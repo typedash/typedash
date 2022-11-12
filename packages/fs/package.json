@@ -20,8 +20,8 @@
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "yarn lint --fix",
     "format": "prettier --write . !./dist",
-    "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test": "echo \"N/A\"",
+    "test:watch": "echo \"N/A\""
   },
   "dependencies": {
     "@typedash/typedash": "1.7.0",
