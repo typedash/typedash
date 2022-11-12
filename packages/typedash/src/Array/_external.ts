@@ -6,6 +6,7 @@ export {
   apFirst,
   append,
   appendW,
+  Applicative,
   apS,
   apSecond,
   bind,
