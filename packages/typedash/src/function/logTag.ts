@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { stringify as S_stringify } from '../String/stringify'
+// import { stringify as S_stringify } from '../String/stringify'
 
 /**
  * @description Use it like `console.log`, with a tag
@@ -12,4 +12,4 @@ import { stringify as S_stringify } from '../String/stringify'
 export const logTag =
   (tag: string) =>
   <T>(data: T) =>
-    console.log(tag, S_stringify(data))
+    console.log(tag, JSON.stringify(data, null, 2))
