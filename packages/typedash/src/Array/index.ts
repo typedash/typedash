@@ -1,6 +1,7 @@
 export * from './_external'
 export * from './fromNonEmptyArray'
 export * from './fromReadonlyNonEmptyArray'
+export * from './mapPSeq'
 export * from './partitionAll'
 export * from './rotateLeft'
 export * from './shuffle'
