@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 1.10.0
+
+### Minor Changes
+
+- 2463b55: 🗺️ Add 'A.mapPSeq' and 'wait'
+
 ## 1.9.1
 
 ### Patch Changes
