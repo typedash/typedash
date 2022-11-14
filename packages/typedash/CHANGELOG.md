@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.1
+
+### Patch Changes
+
+- 90bfca8: Downgrade mem and p-memoize to avoid ESM issues.
+
 ## 2.2.0
 
 ### Minor Changes
