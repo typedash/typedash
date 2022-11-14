@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.4
+
+### Patch Changes
+
+- 35cd707: Avoid using `p-memoize` dep
+
 ## 2.2.3
 
 ### Patch Changes
