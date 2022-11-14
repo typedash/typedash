@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.0.2
+
+### Patch Changes
+
+- a8ba063: Re-publish to include missing types
+
 ## 2.0.1
 
 ### Patch Changes
