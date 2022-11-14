@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.5
+
+### Patch Changes
+
+- 28a6ef0: Pass displayName to memoize fn
+
 ## 2.2.4
 
 ### Patch Changes
