@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.3
+
+### Patch Changes
+
+- 4314eac: Fix missing imports in memoizeTE
+
 ## 2.2.2
 
 ### Patch Changes
