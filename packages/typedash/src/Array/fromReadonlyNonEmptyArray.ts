@@ -1,7 +1,7 @@
-import { pipe } from '../function'
-import * as NEA from '../NonEmptyArray/_external'
-import * as RNEA from '../ReadonlyNonEmptyArray/_external'
-import { fromNonEmptyArray } from './fromNonEmptyArray'
+import { pipe } from '../function/index.js'
+import * as NEA from '../NonEmptyArray/_external.js'
+import * as RNEA from '../ReadonlyNonEmptyArray/_external.js'
+import { fromNonEmptyArray } from './fromNonEmptyArray.js'
 
 export const fromReadonlyNonEmptyArray = <T>(
   x: RNEA.ReadonlyNonEmptyArray<T>,

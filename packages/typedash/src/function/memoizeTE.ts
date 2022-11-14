@@ -1,8 +1,8 @@
 import pMemoize, { CacheStorage } from 'p-memoize'
-import * as E from '../Either'
-import * as TE from '../TaskEither'
-import { MEMOIZE_DEFAULT_TTL_MS } from './const'
-import { getFunctionName } from './getFunctionName'
+import * as E from '../Either/index.js'
+import * as TE from '../TaskEither/index.js'
+import { MEMOIZE_DEFAULT_TTL_MS } from './const.js'
+import { getFunctionName } from './getFunctionName.js'
 
 export const memoizeTE =
   <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>

@@ -1,7 +1,7 @@
-import { pipe } from '../function/_external'
-import { throwError } from '../function/throwError'
-import * as T from '../Task/_external'
-import * as TE from './_external'
+import { pipe } from '../function/_external.js'
+import { throwError } from '../function/throwError.js'
+import * as T from '../Task/_external.js'
+import * as TE from './_external.js'
 
 export const getOrThrowError = <E, A>(
   data: TE.TaskEither<E, A>,

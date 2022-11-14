@@ -1,5 +1,5 @@
-import { pipe } from '../function/_external'
-import * as TE from './_external'
+import { pipe } from '../function/_external.js'
+import * as TE from './_external.js'
 
 /**
  * @description

@@ -1,6 +1,6 @@
-import { pipe } from '../function/_external'
-import { prop } from '../Record/prop'
-import * as A from './_external'
+import { pipe } from '../function/_external.js'
+import { prop } from '../Record/prop.js'
+import * as A from './_external.js'
 
 /**
  * @description

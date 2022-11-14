@@ -1,9 +1,9 @@
-import * as A from '../Array/_external'
-import { flow, pipe } from '../function/_external'
-import * as NEA from '../NonEmptyArray/_external'
-import * as O from '../Option/_external'
-import { toConst as O_toConst } from '../Option/toConst'
-import * as S from '../String/_external'
+import * as A from '../Array/_external.js'
+import { flow, pipe } from '../function/_external.js'
+import * as NEA from '../NonEmptyArray/_external.js'
+import * as O from '../Option/_external.js'
+import { toConst as O_toConst } from '../Option/toConst.js'
+import * as S from '../String/_external.js'
 
 /**
  * @description

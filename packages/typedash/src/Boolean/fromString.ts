@@ -1,5 +1,5 @@
 import { P, match } from 'ts-pattern'
-import { constFalse, constTrue } from '../function/_external'
+import { constFalse, constTrue } from '../function/_external.js'
 
 /**
  * @description Convert string to a boolean.

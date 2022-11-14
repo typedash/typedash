@@ -1,1 +1,1 @@
-export * from './fromString'
+export * from './fromString.js'

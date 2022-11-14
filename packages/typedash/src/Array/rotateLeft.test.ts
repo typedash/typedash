@@ -1,4 +1,4 @@
-import { rotateLeft } from './rotateLeft'
+import { rotateLeft } from './rotateLeft.js'
 
 test.each([
   [0, [], []],

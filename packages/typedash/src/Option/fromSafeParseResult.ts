@@ -1,6 +1,6 @@
 import { match } from 'ts-pattern'
 import { ZodError } from 'zod'
-import { Option, none, some } from './_external'
+import { Option, none, some } from './_external.js'
 
 export type SafeParseResult_Success<Output> = {
   success: true

@@ -1,7 +1,7 @@
 import { ParseParams, ZodTypeAny } from 'zod'
-import { pipe } from '../function/_external'
-import { fromSafeParseResult } from './fromSafeParseResult'
-import type { Option } from './_external'
+import { pipe } from '../function/_external.js'
+import { fromSafeParseResult } from './fromSafeParseResult.js'
+import type { Option } from './_external.js'
 
 /**
  * @description

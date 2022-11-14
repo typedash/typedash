@@ -1,6 +1,6 @@
-import * as O from '../Option/_external'
-import * as NEA from './_external'
-import { isOutOfBound } from './isOutOfBound'
+import * as O from '../Option/_external.js'
+import * as NEA from './_external.js'
+import { isOutOfBound } from './isOutOfBound.js'
 
 /**
  * @description

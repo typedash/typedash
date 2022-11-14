@@ -1,6 +1,6 @@
-import { pipe } from '../function'
-import * as NEA from '../NonEmptyArray/_external'
-import * as S from '../String/_external'
+import { pipe } from '../function/index.js'
+import * as NEA from '../NonEmptyArray/_external.js'
+import * as S from '../String/_external.js'
 
 /**
  * @description Split a string on a given `separator`

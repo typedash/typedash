@@ -1,6 +1,6 @@
 import pMemoize, { CacheStorage } from 'p-memoize'
-import { MEMOIZE_DEFAULT_TTL_MS } from './const'
-import { getFunctionName } from './getFunctionName'
+import { MEMOIZE_DEFAULT_TTL_MS } from './const.js'
+import { getFunctionName } from './getFunctionName.js'
 
 export const memoizeP =
   <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>

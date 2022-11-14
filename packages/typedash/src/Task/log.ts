@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-import { pipe } from '../function/_external'
-import { tapLog } from '../function/tapLog'
-import * as T from './_external'
+import { pipe } from '../function/_external.js'
+import { tapLog } from '../function/tapLog.js'
+import * as T from './_external.js'
 
 /**
  * @description

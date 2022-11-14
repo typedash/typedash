@@ -1,5 +1,5 @@
-import { constant, pipe } from '../function/_external'
-import * as T from './_external'
+import { constant, pipe } from '../function/_external.js'
+import * as T from './_external.js'
 
 /**
  * @description

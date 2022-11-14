@@ -1,4 +1,4 @@
-import * as NEA from './_external'
+import * as NEA from './_external.js'
 
 /**
  * @description

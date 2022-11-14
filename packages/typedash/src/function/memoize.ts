@@ -1,6 +1,6 @@
 import mem from 'mem'
-import { MEMOIZE_DEFAULT_TTL_MS } from './const'
-import { getFunctionName } from './getFunctionName'
+import { MEMOIZE_DEFAULT_TTL_MS } from './const.js'
+import { getFunctionName } from './getFunctionName.js'
 
 // Types duplicated from `mem` since they're not exported and we can't patch
 // the package in a yarn berry pnp repo yet

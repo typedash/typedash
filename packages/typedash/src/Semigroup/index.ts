@@ -3,4 +3,4 @@
  * https://dev.to/gcanti/getting-started-with-fp-ts-semigroup-2mf7
  */
 
-export * from './_external'
+export * from './_external.js'

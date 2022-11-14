@@ -1,9 +1,9 @@
 // import stringifyObject from 'stringify-object'
 import { P, match } from 'ts-pattern'
-import * as A from '../Array/_external'
-import { isArray, isFunction, isNaN, pipe } from '../function/_external'
-import { getFunctionName } from '../function/getFunctionName'
-import * as S from '../String/_external'
+import * as A from '../Array/_external.js'
+import { isArray, isFunction, isNaN, pipe } from '../function/_external.js'
+import { getFunctionName } from '../function/getFunctionName.js'
+import * as S from '../String/_external.js'
 
 const stringifyArray = (data: Array<unknown>) =>
   pipe(data, A.map(stringify), A.join(', '), (x) => `[${x}]`)

@@ -1,2 +1,2 @@
-export * from './_external'
-export * from './lookup'
+export * from './_external.js'
+export * from './lookup.js'

@@ -1,4 +1,4 @@
-import { logTag } from './logTag'
+import { logTag } from './logTag.js'
 
 /**
  * @description log data with a tag and return it unchanged

@@ -1,4 +1,4 @@
-import { fromString } from './fromString'
+import { fromString } from './fromString.js'
 
 test.each([
   ['true', true],

@@ -1,7 +1,7 @@
 import { ParseParams, ZodError, ZodTypeAny } from 'zod'
-import { pipe } from '../function/_external'
-import * as TE from './_external'
-import { fromSafeParseResult } from './fromSafeParseResult'
+import { pipe } from '../function/_external.js'
+import * as TE from './_external.js'
+import { fromSafeParseResult } from './fromSafeParseResult.js'
 
 /**
  * @description

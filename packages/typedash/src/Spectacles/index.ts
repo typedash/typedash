@@ -1,1 +1,1 @@
-export * from './_external'
+export * from './_external.js'

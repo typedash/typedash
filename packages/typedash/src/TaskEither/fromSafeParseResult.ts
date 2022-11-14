@@ -1,6 +1,6 @@
-import { fromSafeParseResult as E_fromSafeParseResult } from '../Either/fromSafeParseResult'
-import { flow } from '../function/_external'
-import * as TE from './_external'
+import { fromSafeParseResult as E_fromSafeParseResult } from '../Either/fromSafeParseResult.js'
+import { flow } from '../function/_external.js'
+import * as TE from './_external.js'
 
 /**
  * @description

@@ -1,6 +1,6 @@
-import { constant, pipe } from '../function/_external'
-import * as O from '../Option/_external'
-import * as A from './_external'
+import { constant, pipe } from '../function/_external.js'
+import * as O from '../Option/_external.js'
+import * as A from './_external.js'
 
 /**
  * @description

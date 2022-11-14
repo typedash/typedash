@@ -1,5 +1,5 @@
 import { match } from 'ts-pattern'
-import { constFalse, constTrue } from '../function/_external'
+import { constFalse, constTrue } from '../function/_external.js'
 
 export const toBoolean = (data: string): boolean =>
   match(data)
