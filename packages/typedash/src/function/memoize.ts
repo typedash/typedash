@@ -3,11 +3,11 @@ import { getFunctionName } from './getFunctionName'
 
 // Types duplicated from `mem` since they're not exported and we can't patch
 // the package in a yarn berry pnp repo yet
-type CacheStorageContent<ValueType> = {
+export type CacheStorageContent<ValueType> = {
   data: ValueType
   maxAge: number
 }
-type CacheStorage<KeyType, ValueType> = {
+export type CacheStorage<KeyType, ValueType> = {
   has: (key: KeyType) => boolean
   get: (key: KeyType) => CacheStorageContent<ValueType> | undefined
   set: (key: KeyType, value: CacheStorageContent<ValueType>) => void
