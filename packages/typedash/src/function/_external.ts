@@ -22,7 +22,7 @@ export type { Lazy } from 'fp-ts/function'
 
 export { and, not, or } from 'fp-ts/Predicate'
 
-export { ifElse, memoize, when, withIndex, unless } from 'fp-ts-std/Function'
+export { ifElse, when, withIndex, unless } from 'fp-ts-std/Function'
 
 export {
   allPass,
