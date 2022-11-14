@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.1
+
+### Patch Changes
+
+- 3336bb3: Add file extensions for better ESM support
+
 ## 2.2.0
 
 ### Minor Changes
