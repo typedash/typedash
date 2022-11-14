@@ -1,5 +1,12 @@
 # @typedash/eslint-config-typedash
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [dcd8390]
+  - @typedash/tsconfig@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
