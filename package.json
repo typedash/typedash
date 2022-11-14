@@ -7,7 +7,7 @@
     "node": "16.15.0",
     "yarn": "3.1.1"
   },
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@4.0.0-rc.28",
   "scripts": {
     "setup": "./scripts/setup.sh",
     "yarn-p": "yarn workspaces foreach --exclude=root --verbose --topological-dev --parallel",
@@ -62,7 +62,7 @@
     "onchange": "7.1.0",
     "prettier": "2.5.1",
     "ts-jest": "27.0.7",
-    "typescript": "4.2.4"
+    "typescript": "^4.8.4"
   },
   "husky": {
     "hooks": {
