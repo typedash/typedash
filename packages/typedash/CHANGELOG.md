@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.0.0
+
+### Major Changes
+
+- 705c282: Replace existing `memoize` with custom implementation sing `mem` library.
+
 ## 1.10.0
 
 ### Minor Changes
