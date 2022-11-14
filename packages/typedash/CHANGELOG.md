@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.1.0
+
+### Minor Changes
+
+- a854767: Add `memoizeP` and `memoizeTE`
+
 ## 2.0.2
 
 ### Patch Changes
