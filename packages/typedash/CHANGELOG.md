@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.2
+
+### Patch Changes
+
+- 25beebb: Bump to trigger new release
+
 ## 2.2.1
 
 ### Patch Changes
