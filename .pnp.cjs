@@ -4005,6 +4005,7 @@ const RAW_RUNTIME_STATE =
           ["spectacles-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7"],\
           ["ts-jest", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:27.0.7"],\
           ["ts-pattern", "npm:4.0.4"],\
+          ["type-fest", "npm:3.2.0"],\
           ["typescript", "patch:typescript@npm%3A4.8.4#optional!builtin<compat/typescript>::version=4.8.4&hash=0102e9"],\
           ["zod", "npm:3.19.1"]\
         ],\
@@ -12122,6 +12123,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/type-fest-npm-0.8.1-351ad028fe-9.zip/node_modules/type-fest/",\
         "packageDependencies": [\
           ["type-fest", "npm:0.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.2.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/type-fest-npm-3.2.0-e8b68ee9a0-9.zip/node_modules/type-fest/",\
+        "packageDependencies": [\
+          ["type-fest", "npm:3.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\

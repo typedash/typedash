@@ -1,7 +1,14 @@
 import { memoizeP } from './memoizeP'
 
 const cache = new Map()
-const mem = memoizeP(() => cache)
+const cacheF = () => ({
+  get: (key: string) => Promise.resolve(cache.get(key)),
+  has: (key: string) => Promise.resolve(cache.has(key)),
+  set: (key: string, value: unknown) => Promise.resolve(cache.set(key, value)),
+  delete: (key: string) => Promise.resolve(cache.delete(key)),
+})
+
+const mem = memoizeP(cacheF)
 const rngAsync = (num: number) => Promise.resolve(Math.random() * num)
 const rngAsyncMemo = mem(rngAsync)
 

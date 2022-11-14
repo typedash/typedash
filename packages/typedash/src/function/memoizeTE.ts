@@ -1,10 +1,10 @@
-import pMemoize, { CacheStorage } from 'p-memoize'
 import * as E from '../Either'
 import * as TE from '../TaskEither'
 import { identity } from './_external'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
 import { getFunctionName } from './getFunctionName'
 import { throwError } from './throwError'
+import { CacheStorage, memoizePromise } from './utils'
 
 export const memoizeTE =
   <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
@@ -22,7 +22,7 @@ export const memoizeTE =
 
     return TE.tryCatch(
       () =>
-        pMemoize(
+        memoizePromise(
           func,
           {
             // @ts-ignore

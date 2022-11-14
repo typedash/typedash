@@ -2408,11 +2408,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typedash/eslint-config-typedash@npm:*, @typedash/eslint-config-typedash@npm:0.0.1, @typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash":
+"@typedash/eslint-config-typedash@npm:*, @typedash/eslint-config-typedash@npm:0.0.2, @typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash"
   dependencies:
-    "@typedash/tsconfig": "npm:0.0.1"
+    "@typedash/tsconfig": "npm:0.0.2"
     "@typescript-eslint/eslint-plugin": "npm:5.12.1"
     "@typescript-eslint/parser": "npm:5.12.1"
     eslint: "npm:8.9.0"
@@ -2435,10 +2435,10 @@ __metadata:
   resolution: "@typedash/fs@workspace:packages/fs"
   dependencies:
     "@relmify/jest-fp-ts": "npm:^2.0.2"
-    "@typedash/eslint-config-typedash": "npm:0.0.1"
+    "@typedash/eslint-config-typedash": "npm:0.0.2"
     "@typedash/prettier": "npm:0.0.1"
-    "@typedash/tsconfig": "npm:0.0.1"
-    "@typedash/typedash": "npm:2.2.0"
+    "@typedash/tsconfig": "npm:0.0.2"
+    "@typedash/typedash": "npm:2.2.3"
     "@types/fs-extra": "npm:^9.0.13"
     "@types/jest": "npm:27.0.3"
     eslint: "npm:8.9.0"
@@ -2459,7 +2459,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/tsconfig@npm:*, @typedash/tsconfig@npm:0.0.1, @typedash/tsconfig@workspace:packages/tsconfig":
+"@typedash/tsconfig@npm:*, @typedash/tsconfig@npm:0.0.2, @typedash/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@typedash/tsconfig@workspace:packages/tsconfig"
   peerDependencies:
@@ -2467,7 +2467,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@npm:2.2.0, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@npm:2.2.3, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
@@ -2476,9 +2476,9 @@ __metadata:
     "@babel/preset-env": "npm:^7.20.2"
     "@babel/runtime": "npm:^7.20.1"
     "@relmify/jest-fp-ts": "npm:^2.0.2"
-    "@typedash/eslint-config-typedash": "npm:0.0.1"
+    "@typedash/eslint-config-typedash": "npm:0.0.2"
     "@typedash/prettier": "npm:0.0.1"
-    "@typedash/tsconfig": "npm:0.0.1"
+    "@typedash/tsconfig": "npm:0.0.2"
     "@types/babel__core": "npm:^7"
     "@types/babel__plugin-transform-runtime": "npm:^7"
     "@types/babel__preset-env": "npm:^7"
@@ -2504,6 +2504,7 @@ __metadata:
     spectacles-ts: "npm:^1.0.7"
     ts-jest: "npm:27.0.7"
     ts-pattern: "npm:4.0.4"
+    type-fest: "npm:^3.2.0"
     typescript: "npm:^4.8.4"
     zod: "npm:^3.19.1"
   languageName: unknown
@@ -9355,6 +9356,13 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: 08def3ad30577eb6aa2d1ce550b4a051767ff665725db52a3d5c2721405278f09c0cf95eb25684d0a956d9b9971dfd106a77ebcb60f0ee852e3812e645addb36
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "type-fest@npm:3.2.0"
+  checksum: 6c20a58d48e0d1f384a214eda05af0deb61d8a76169fc042993b9efeabd4f1a4dd43c60601151e2d6eda40b75007ea76eadab010dfee7e243a6462db13ae485b
   languageName: node
   linkType: hard
 

@@ -1,21 +1,15 @@
-import pMemoize from 'p-memoize'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
 import { getFunctionName } from './getFunctionName'
-import { CacheStorage, CacheStorageContent } from './types'
+import { CacheStorage, memoizePromise } from './utils'
 
 export const memoizeP =
-  <Ret>(
-    cacheFactory: (
-      ttlMs: number,
-    ) => CacheStorage<string, CacheStorageContent<Ret>>,
-  ) =>
+  <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   <Fn extends (...args: Array<any>) => Promise<Ret>>(
     fn: Fn,
     ttlMs = MEMOIZE_DEFAULT_TTL_MS,
   ): Fn =>
-    // @ts-ignore
-    pMemoize(fn, {
+    memoizePromise(fn, {
       // @ts-ignore
       cache: cacheFactory(ttlMs),
       cacheKey: (args) => `${getFunctionName(fn)}_${JSON.stringify(args)}`,
