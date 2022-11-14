@@ -1,3 +1,4 @@
+import { memoize } from 'lodash'
 import type { AsyncReturnType } from 'type-fest'
 
 // TODO: Use the one in `type-fest` when it's added there.
@@ -116,10 +117,8 @@ export function memoizePromise<
     return promise
   } as FunctionToMemoize
 
-  //   mimicFn(memoized, fn, {
-  //     ignoreNonConfigurable: true,
-  //   })
-
+  // @ts-ignore
+  memoize.displayName = fn.name
   cacheStore.set(memoized, cache)
 
   return memoized
