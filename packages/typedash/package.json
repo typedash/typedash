@@ -32,7 +32,7 @@
     "mem": "latest",
     "monocle-ts": "2.3.12",
     "newtype-ts": "0.3.5",
-    "p-memoize": "^7.1.1",
+    "p-memoize": "7.0.0",
     "ramda": "0.27.1",
     "ramda-adjunct": "2.35.0",
     "spectacles-ts": "^1.0.7",

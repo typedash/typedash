@@ -4007,7 +4007,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["newtype-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.3.5"],
             ["npm-run-all", "npm:4.1.5"],
             ["onchange", "npm:7.1.0"],
-            ["p-memoize", "npm:7.1.1"],
+            ["p-memoize", "npm:7.0.0"],
             ["prettier", "npm:2.5.1"],
             ["ramda", "npm:0.27.1"],
             ["ramda-adjunct", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.35.0"],
@@ -10267,12 +10267,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["p-memoize", [
-        ["npm:7.1.1", {
-          "packageLocation": "./.yarn/cache/p-memoize-npm-7.1.1-c05d95e5f4-2fc5b12fc5.zip/node_modules/p-memoize/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/p-memoize-npm-7.0.0-c32bdb818a-c3f4a60764.zip/node_modules/p-memoize/",
           "packageDependencies": [
-            ["p-memoize", "npm:7.1.1"],
-            ["mimic-fn", "npm:4.0.0"],
-            ["type-fest", "npm:3.2.0"]
+            ["p-memoize", "npm:7.0.0"],
+            ["mimic-fn", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -12082,13 +12081,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.8.1-351ad028fe-d61c4b2eba.zip/node_modules/type-fest/",
           "packageDependencies": [
             ["type-fest", "npm:0.8.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:3.2.0", {
-          "packageLocation": "./.yarn/cache/type-fest-npm-3.2.0-e8b68ee9a0-2668b62e8d.zip/node_modules/type-fest/",
-          "packageDependencies": [
-            ["type-fest", "npm:3.2.0"]
           ],
           "linkType": "HARD",
         }]

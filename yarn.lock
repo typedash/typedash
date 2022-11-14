@@ -2497,7 +2497,7 @@ __metadata:
     newtype-ts: 0.3.5
     npm-run-all: 4.1.5
     onchange: 7.1.0
-    p-memoize: ^7.1.1
+    p-memoize: 7.0.0
     prettier: 2.5.1
     ramda: 0.27.1
     ramda-adjunct: 2.35.0
@@ -7759,13 +7759,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-memoize@npm:^7.1.1":
-  version: 7.1.1
-  resolution: "p-memoize@npm:7.1.1"
+"p-memoize@npm:7.0.0":
+  version: 7.0.0
+  resolution: "p-memoize@npm:7.0.0"
   dependencies:
     mimic-fn: ^4.0.0
-    type-fest: ^3.0.0
-  checksum: 2fc5b12fc530aed9c1e455f706d8da2a2e6bed4573f611a4e92b2a75f253e8c0acc63ad014b55f155b5d5de110c586b490a4d6612d64bc743106cad626d995fd
+  checksum: c3f4a607648d643c715f7ac8341b780c44483ed77bc478ef61b13ffe840f248503fa6be904504c0ab550a7af0fac2e5f02e2e7414e121d9768d3abbefc3a908c
   languageName: node
   linkType: hard
 
@@ -9337,13 +9336,6 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^3.0.0":
-  version: 3.2.0
-  resolution: "type-fest@npm:3.2.0"
-  checksum: 2668b62e8df6ae39074c93cb1e2c267c5f8a16d0d1bb693e71f2ea0b80da14eca5442edbcc5609d1099c49a4aaecda960d7fede3d3253b4126d2c6dfeb41b8c3
   languageName: node
   linkType: hard
 
