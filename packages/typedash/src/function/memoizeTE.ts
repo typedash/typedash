@@ -1,8 +1,10 @@
 import pMemoize, { CacheStorage } from 'p-memoize'
 import * as E from '../Either'
 import * as TE from '../TaskEither'
+import { identity } from './_external'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
 import { getFunctionName } from './getFunctionName'
+import { throwError } from './throwError'
 
 export const memoizeTE =
   <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
@@ -28,7 +30,6 @@ export const memoizeTE =
             cacheKey: (args) =>
               `${getFunctionName(fn)}_${JSON.stringify(args)}`,
           },
-          // @ts-ignore
           // eslint-disable-next-line max-len
           // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
         )(...args).then(E.match(throwError, identity)),
