@@ -1,4 +1,5 @@
 import mem from 'mem'
+import { MEMOIZE_DEFAULT_TTL_MS } from './const'
 import { getFunctionName } from './getFunctionName'
 
 // Types duplicated from `mem` since they're not exported and we can't patch
@@ -15,8 +16,6 @@ export type CacheStorage<KeyType, ValueType> = {
   clear?: () => void
 }
 
-export const DEFAULT_TTL_MS = 3_600_000 // 1hr
-
 // broken out as prettier was formatting weirdly due to the
 // eslint comment above a generic
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,7 +23,10 @@ type Args = Array<any>
 
 export const memoize =
   <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
-  <Fn extends (...args: Args) => Ret>(fn: Fn, ttlMs = DEFAULT_TTL_MS): Fn =>
+  <Fn extends (...args: Args) => Ret>(
+    fn: Fn,
+    ttlMs = MEMOIZE_DEFAULT_TTL_MS,
+  ): Fn =>
     mem(fn, {
       // @ts-ignore
       cache: cacheFactory(ttlMs),
