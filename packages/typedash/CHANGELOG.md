@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.0
+
+### Minor Changes
+
+- 3bb3310: Publish as ESM only
+
 ## 2.1.0
 
 ### Minor Changes
