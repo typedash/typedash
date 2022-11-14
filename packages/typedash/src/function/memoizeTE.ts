@@ -23,6 +23,7 @@ export const memoizeTE =
         pMemoize(
           func,
           {
+            // @ts-ignore
             cache: cacheFactory(ttlMs),
             cacheKey: (args) =>
               `${getFunctionName(fn)}_${JSON.stringify(args)}`,

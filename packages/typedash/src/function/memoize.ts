@@ -1,20 +1,7 @@
 import mem from 'mem'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
 import { getFunctionName } from './getFunctionName'
-
-// Types duplicated from `mem` since they're not exported and we can't patch
-// the package in a yarn berry pnp repo yet
-export type CacheStorageContent<ValueType> = {
-  data: ValueType
-  maxAge: number
-}
-export type CacheStorage<KeyType, ValueType> = {
-  has: (key: KeyType) => boolean
-  get: (key: KeyType) => CacheStorageContent<ValueType> | undefined
-  set: (key: KeyType, value: CacheStorageContent<ValueType>) => void
-  delete: (key: KeyType) => void
-  clear?: () => void
-}
+import { CacheStorage } from './types'
 
 // broken out as prettier was formatting weirdly due to the
 // eslint comment above a generic

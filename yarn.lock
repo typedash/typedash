@@ -2438,7 +2438,7 @@ __metadata:
     "@typedash/eslint-config-typedash": "npm:0.0.1"
     "@typedash/prettier": "npm:0.0.1"
     "@typedash/tsconfig": "npm:0.0.1"
-    "@typedash/typedash": "npm:2.1.0"
+    "@typedash/typedash": "npm:2.2.0"
     "@types/fs-extra": "npm:^9.0.13"
     "@types/jest": "npm:27.0.3"
     eslint: "npm:8.9.0"
@@ -2467,7 +2467,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@npm:2.1.0, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@npm:2.2.0, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
@@ -2492,12 +2492,12 @@ __metadata:
     io-ts: "npm:^2.2.19"
     jest: "npm:27.3.1"
     lodash: "npm:4.17.21"
-    mem: "npm:latest"
+    mem: "npm:8.1.1"
     monocle-ts: "npm:2.3.12"
     newtype-ts: "npm:0.3.5"
     npm-run-all: "npm:4.1.5"
     onchange: "npm:7.1.0"
-    p-memoize: "npm:7.0.0"
+    p-memoize: "npm:4.0.4"
     prettier: "npm:2.5.1"
     ramda: "npm:0.27.1"
     ramda-adjunct: "npm:2.35.0"
@@ -7097,13 +7097,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mem@npm:latest":
-  version: 9.0.2
-  resolution: "mem@npm:9.0.2"
+"mem@npm:8.1.1":
+  version: 8.1.1
+  resolution: "mem@npm:8.1.1"
   dependencies:
     map-age-cleaner: "npm:^0.1.3"
-    mimic-fn: "npm:^4.0.0"
-  checksum: d8b22de7751b49f589209b166783cef7e16df255ecc306aeb94c6597dee7a6940f1aebd017a25296d34a121c3348aef2a0b5c1bc96a2ddf314ddd282dc1ab4b4
+    mimic-fn: "npm:^3.1.0"
+  checksum: b13ba7f6331d915cfb8e3427ee1a099204a528ac1b517dc8f22ae2e23de6952d7db8b3535cc2ec5ae23e04bab1364feae59a80668021fda1fe3571a467fc1c56
   languageName: node
   linkType: hard
 
@@ -7180,10 +7180,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mimic-fn@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "mimic-fn@npm:4.0.0"
-  checksum: 6854bdfe4abeb91b19fc0d1bbec01ad065fde2d2c03c81557eb7a1ed3354c1c956962e293bd97bc110b7b24fa30a3345d8756bbbed82e458cc68a45521eb7813
+"mimic-fn@npm:^3.0.0, mimic-fn@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "mimic-fn@npm:3.1.0"
+  checksum: c5ad1e320b3be232f73b4514678fec711c8924cb8d30233146dc10289e7d3952834c562b8a5b80671b9298a14dd10185e168bdb9898c0ad3c55a097f0e4b5bdb
   languageName: node
   linkType: hard
 
@@ -7698,7 +7698,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-limit@npm:^2.2.0":
+"p-limit@npm:^2.2.0, p-limit@npm:^2.2.2":
   version: 2.3.0
   resolution: "p-limit@npm:2.3.0"
   dependencies:
@@ -7759,12 +7759,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-memoize@npm:7.0.0":
-  version: 7.0.0
-  resolution: "p-memoize@npm:7.0.0"
+"p-memoize@npm:4.0.4":
+  version: 4.0.4
+  resolution: "p-memoize@npm:4.0.4"
   dependencies:
-    mimic-fn: "npm:^4.0.0"
-  checksum: 4fcc84ceac6c6db830576074834cbb6bb52c66d924dba691b6250f208f971ee64c9644dfee3ef9873132a9621075747ca5745d2c199075a8351ff97b150bf666
+    map-age-cleaner: "npm:^0.1.3"
+    mimic-fn: "npm:^3.0.0"
+    p-settle: "npm:^4.1.1"
+  checksum: 0ed4b4764c9b01ddb555debcd885a8fcbcfbb3d6edc8012dc065220de795dcdae72327b2b3e3fb06882acf703a26561fa7d18ba08674adb0f790f86619d73f99
+  languageName: node
+  linkType: hard
+
+"p-reflect@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "p-reflect@npm:2.1.0"
+  checksum: 99c2e9fa372077b83402534ff36fefbeb4fb3cb63ebf12b6abb14fa232c13080cad6516feebda865d3027af3a8307db69bd9e22d8255c0dbe0b869ffd50d1e76
+  languageName: node
+  linkType: hard
+
+"p-settle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "p-settle@npm:4.1.1"
+  dependencies:
+    p-limit: "npm:^2.2.2"
+    p-reflect: "npm:^2.1.0"
+  checksum: 85cbfb5cbe57d39f81d2ed6f8b41f94227294d015a9a8f906a415c4cffd6ffa7cf419584a5635515b9cd4f57e8f8dc76ff5533c96168da745452d2d0b2867c3f
   languageName: node
   linkType: hard
 
