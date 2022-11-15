@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.10
+
+### Patch Changes
+
+- 180e4a6: Make all memoize options optional
+
 ## 2.2.9
 
 ### Patch Changes

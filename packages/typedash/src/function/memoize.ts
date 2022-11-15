@@ -1,5 +1,5 @@
 import mem from 'mem'
-import { MEMOIZE_DEFAULT_OPTIONS, MEMOIZE_DEFAULT_TTL_MS } from './const'
+import { MEMOIZE_DEFAULT_OPTIONS } from './const'
 import { MemoizeOptions } from './types'
 import { getMemoizedFunctionCacheKey } from './utils'
 
