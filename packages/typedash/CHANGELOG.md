@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.9
+
+### Patch Changes
+
+- 8a17a11: Update memoizeTE to unwrap E before caching
+
 ## 2.2.8
 
 ### Patch Changes
