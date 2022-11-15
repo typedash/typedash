@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.6
+
+### Patch Changes
+
+- 3561aed: Use @typedash/p-memoize for memoization fns
+
 ## 2.2.5
 
 ### Patch Changes
