@@ -1,4 +1,6 @@
-import { TE } from '..'
+import { getOrThrowError } from '../TaskEither'
+import * as TE from '../TaskEither/_external'
+import { pipe } from './_external'
 import { memoizeTE } from './memoizeTE'
 
 const cache = new Map()
@@ -14,9 +16,10 @@ const rngTE = (num: number): TE.TaskEither<Error, number> =>
 const rngTEMemo = mem(rngTE)
 
 test('TE', async () => {
-  const result = await rngTE(10)()
-  const memoResult = await rngTEMemo(10)()
+  const result = await pipe(10, rngTE, getOrThrowError)()
+  const memoResult = await pipe(10, rngTEMemo, getOrThrowError)()
+  const memoResult2 = await pipe(10, rngTEMemo, getOrThrowError)()
 
   expect(result).not.toEqual(memoResult)
-  expect(memoResult).toEqual(await rngTEMemo(10)())
+  expect(memoResult).toEqual(memoResult2)
 })

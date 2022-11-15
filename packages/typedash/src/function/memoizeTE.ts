@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import pMemoize, { CacheStorage } from '@typedash/p-memoize'
 import * as E from '../Either'
 import * as TE from '../TaskEither'
@@ -8,7 +10,6 @@ import { getMemoizedFunctionCacheKey } from './utils'
 
 export const memoizeTE =
   (cacheFactory: (ttlMs: number) => CacheStorage<string, unknown>) =>
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   <E, Ret, Fn extends (...args: Array<any>) => TE.TaskEither<E, Ret>>(
     fn: Fn,
     options: { ttlMs: number; cacheKeyName?: string } = {
@@ -16,11 +17,14 @@ export const memoizeTE =
     },
   ): Fn =>
   // @ts-ignore
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (...args: Array<any>) => {
-    // eslint-disable-next-line max-len
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any
-    const func = (...args_: Array<any>) => fn(...args_)()
+    const func = (...args_: Array<any>) =>
+      fn(...args_)().then(
+        E.match(throwError, (x) => {
+          console.log('RIGht of match', x)
+          return x
+        }),
+      )
 
     return TE.tryCatch(
       () =>
@@ -33,9 +37,8 @@ export const memoizeTE =
             >,
             cacheKey: getMemoizedFunctionCacheKey(fn, options.cacheKeyName),
           },
-          // eslint-disable-next-line max-len
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
-        )(...args).then(E.match(throwError, identity)),
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        )(...args),
       (x) => x as E,
     )
   }
