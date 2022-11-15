@@ -39,6 +39,10 @@ to: packages/<%= name %>/package.json
     "npm-run-all": "4.1.5",
     "onchange": "7.1.0",
     "prettier": "2.5.1",
-    "typescript": "4.2.4"
+    "typescript": "^4.8.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

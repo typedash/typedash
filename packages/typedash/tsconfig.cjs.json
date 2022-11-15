@@ -1,5 +1,6 @@
 {
   "extends": "../../tsconfig.cjs.json",
+  "references": [{ "path": "../p-memoize" }],
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist/cjs"

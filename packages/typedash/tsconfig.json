@@ -1,9 +1,9 @@
 {
   "extends": "../../tsconfig.json",
+  "references": [{ "path": "../p-memoize" }],
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist/esm"
   },
-  "references": [{ "path": "../p-memoize" }],
   "include": ["./src"]
 }

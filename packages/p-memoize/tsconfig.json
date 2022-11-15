@@ -1,6 +1,5 @@
 {
   "extends": "../../tsconfig.json",
-  "references": [{ "path": "../typedash" }],
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist/esm"

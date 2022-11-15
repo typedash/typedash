@@ -4024,7 +4024,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["newtype-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.3.5"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["onchange", "npm:7.1.0"],\
-            ["p-memoize", "npm:4.0.4"],\
             ["prettier", "npm:2.5.1"],\
             ["ramda", "npm:0.27.1"],\
             ["ramda-adjunct", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.35.0"],\
@@ -10308,38 +10307,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["p-map", "npm:4.0.0"],\
             ["aggregate-error", "npm:3.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["p-memoize", [\
-        ["npm:4.0.4", {\
-          "packageLocation": "./.yarn/cache/p-memoize-npm-4.0.4-53a124387c-64bcd13b03.zip/node_modules/p-memoize/",\
-          "packageDependencies": [\
-            ["p-memoize", "npm:4.0.4"],\
-            ["map-age-cleaner", "npm:0.1.3"],\
-            ["mimic-fn", "npm:3.1.0"],\
-            ["p-settle", "npm:4.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["p-reflect", [\
-        ["npm:2.1.0", {\
-          "packageLocation": "./.yarn/cache/p-reflect-npm-2.1.0-3e8a379d2e-eed3df781b.zip/node_modules/p-reflect/",\
-          "packageDependencies": [\
-            ["p-reflect", "npm:2.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["p-settle", [\
-        ["npm:4.1.1", {\
-          "packageLocation": "./.yarn/cache/p-settle-npm-4.1.1-5a4b6d89f6-83b3dcffef.zip/node_modules/p-settle/",\
-          "packageDependencies": [\
-            ["p-settle", "npm:4.1.1"],\
-            ["p-limit", "npm:2.3.0"],\
-            ["p-reflect", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
