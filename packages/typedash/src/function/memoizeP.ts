@@ -1,16 +1,22 @@
+import pMemoize, { CacheStorage } from '@typedash/p-memoize'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
-import { getFunctionName } from './getFunctionName'
-import { CacheStorage, memoizePromise } from './utils'
+import { getMemoizedFunctionCacheKey } from './utils'
 
 export const memoizeP =
-  <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
+  (cacheFactory: (ttlMs: number) => CacheStorage<string, unknown>) =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  <Fn extends (...args: Array<any>) => Promise<Ret>>(
+  <Ret, Fn extends (...args: Array<any>) => Promise<Ret>>(
     fn: Fn,
-    ttlMs = MEMOIZE_DEFAULT_TTL_MS,
+    options: { ttlMs: number; cacheKeyName?: string } = {
+      ttlMs: MEMOIZE_DEFAULT_TTL_MS,
+    },
   ): Fn =>
-    memoizePromise(fn, {
-      // @ts-ignore
-      cache: cacheFactory(ttlMs),
-      cacheKey: (args) => `${getFunctionName(fn)}_${JSON.stringify(args)}`,
+    pMemoize(fn, {
+      // eslint-disable-next-line max-len
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      cache: cacheFactory(options.ttlMs) as CacheStorage<
+        string,
+        Awaited<ReturnType<typeof fn>>
+      >,
+      cacheKey: getMemoizedFunctionCacheKey(fn, options.cacheKeyName),
     })

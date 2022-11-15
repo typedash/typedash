@@ -1,4 +1,6 @@
-import { memoize } from 'lodash'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable jsdoc/require-description */
+/* eslint-disable max-len */
 import type { AsyncReturnType } from 'type-fest'
 
 // TODO: Use the one in `type-fest` when it's added there.
@@ -25,6 +27,10 @@ export type Options<
 > = {
   /**
    * Determines the cache key for storing the result based on the function arguments. By default, __only the first argument is considered__ and it only works with [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).
+   *
+   * A `cacheKey` function can return any type supported by `Map` (or whatever structure you use in the `cache` option).
+   *
+   * You can have it cache **all** the arguments by value with `JSON.stringify`, if they are compatible:
    *
    * ```
    * import pMemoize from 'p-memoize';
@@ -59,7 +65,31 @@ export type Options<
     | false
 }
 
-export function memoizePromise<
+/**
+ * [Memoize](https://en.wikipedia.org/wiki/Memoization) functions - An optimization used to speed up consecutive function calls by caching the result of calls with identical input.
+ *
+ * @param fn - Function to be memoized.
+ *
+ * @example
+ * ```
+ * import {setTimeout as delay} from 'node:timer/promises';
+ * import pMemoize from 'p-memoize';
+ * import got from 'got';
+ *
+ * const memoizedGot = pMemoize(got);
+ *
+ * await memoizedGot('https://sindresorhus.com');
+ *
+ * // This call is cached
+ * await memoizedGot('https://sindresorhus.com');
+ *
+ * await delay(2000);
+ *
+ * // This call is not cached as the cache has expired
+ * await memoizedGot('https://sindresorhus.com');
+ * ```
+ */
+export default function pMemoize<
   FunctionToMemoize extends AnyAsyncFunction,
   CacheKeyType,
 >(
@@ -69,6 +99,8 @@ export function memoizePromise<
     cache = new Map<CacheKeyType, AsyncReturnType<FunctionToMemoize>>(),
   }: Options<FunctionToMemoize, CacheKeyType> = {},
 ): FunctionToMemoize {
+  // Promise objects can't be serialized so we keep track of them internally and only provide their resolved values to `cache`
+  // `Promise<AsyncReturnType<FunctionToMemoize>>` is used instead of `ReturnType<FunctionToMemoize>` because promise properties are not kept
   const promiseCache = new Map<
     CacheKeyType,
     Promise<AsyncReturnType<FunctionToMemoize>>
@@ -88,7 +120,6 @@ export function memoizePromise<
     const promise = (async () => {
       try {
         if (cache && (await cache.has(key))) {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
           return (await cache.get(key))!
         }
 
@@ -96,11 +127,9 @@ export function memoizePromise<
           AsyncReturnType<FunctionToMemoize>
         >
 
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         const result = await promise
 
         try {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
           return result
         } finally {
           if (cache) {
@@ -117,13 +146,41 @@ export function memoizePromise<
     return promise
   } as FunctionToMemoize
 
-  // @ts-ignore
-  memoize.displayName = fn.name
   cacheStore.set(memoized, cache)
 
   return memoized
 }
 
+/**
+ * - Only class methods and getters/setters can be memoized, not regular functions (they aren't part of the proposal);
+ * - Only [TypeScript’s decorators](https://www.typescriptlang.org/docs/handbook/decorators.html#parameter-decorators) are supported, not [Babel’s](https://babeljs.io/docs/en/babel-plugin-proposal-decorators), which use a different version of the proposal;
+ * - Being an experimental feature, they need to be enabled with `--experimentalDecorators`; follow TypeScript’s docs.
+ *
+ * @returns A [decorator](https://github.com/tc39/proposal-decorators) to memoize class methods or static class methods.
+ *
+ * @example
+ * ```
+ * import {pMemoizeDecorator} from 'p-memoize';
+ *
+ * class Example {
+ * index = 0
+ *
+ * @pMemoizeDecorator()
+ * async counter() {
+ * return ++this.index;
+ * }
+ * }
+ *
+ * class ExampleWithOptions {
+ * index = 0
+ *
+ * @pMemoizeDecorator()
+ * async counter() {
+ * return ++this.index;
+ * }
+ * }
+ * ```
+ */
 export function pMemoizeDecorator<
   FunctionToMemoize extends AnyAsyncFunction,
   CacheKeyType,
@@ -135,8 +192,7 @@ export function pMemoizeDecorator<
     propertyKey: string,
     descriptor: PropertyDescriptor,
   ): void => {
-    // eslint-disable-next-line max-len
-    // eslint-disable-next-line max-len, @typescript-eslint/no-unsafe-member-access
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     const input = target[propertyKey] // eslint-disable-line @typescript-eslint/no-unsafe-assignment
 
     if (typeof input !== 'function') {
@@ -148,7 +204,7 @@ export function pMemoizeDecorator<
 
     descriptor.get = function () {
       if (!instanceMap.has(this)) {
-        const value = memoizePromise(input, options) as FunctionToMemoize
+        const value = pMemoize(input, options) as FunctionToMemoize
         instanceMap.set(this, value)
         return value
       }
@@ -158,6 +214,11 @@ export function pMemoizeDecorator<
   }
 }
 
+/**
+ * Clear all cached data of a memoized function.
+ *
+ * @param fn - Memoized function.
+ */
 export function pMemoizeClear(fn: AnyAsyncFunction): void {
   if (!cacheStore.has(fn)) {
     throw new TypeError("Can't clear a function that was not memoized!")

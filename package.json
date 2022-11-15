@@ -7,7 +7,7 @@
     "node": "16.15.0",
     "yarn": "3.1.1"
   },
-  "packageManager": "yarn@4.0.0-rc.28",
+  "packageManager": "yarn@3.2.4",
   "scripts": {
     "setup": "./scripts/setup.sh",
     "yarn-p": "yarn workspaces foreach --exclude=root --verbose --topological-dev --parallel",

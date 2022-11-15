@@ -24,6 +24,7 @@
     "test:watch": "yarn test --watch"
   },
   "dependencies": {
+    "@typedash/p-memoize": "^7.1.1",
     "@types/lodash": "4.14.177",
     "@types/ramda": "0.27.1",
     "fp-ts": "^2.12.3",
@@ -32,7 +33,6 @@
     "mem": "8.1.1",
     "monocle-ts": "2.3.12",
     "newtype-ts": "0.3.5",
-    "p-memoize": "4.0.4",
     "ramda": "0.27.1",
     "ramda-adjunct": "2.35.0",
     "spectacles-ts": "^1.0.7",

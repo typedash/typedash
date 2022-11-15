@@ -1,17 +1,19 @@
+import pMemoize, { CacheStorage } from '@typedash/p-memoize'
 import * as E from '../Either'
 import * as TE from '../TaskEither'
 import { identity } from './_external'
 import { MEMOIZE_DEFAULT_TTL_MS } from './const'
-import { getFunctionName } from './getFunctionName'
 import { throwError } from './throwError'
-import { CacheStorage, memoizePromise } from './utils'
+import { getMemoizedFunctionCacheKey } from './utils'
 
 export const memoizeTE =
-  <Ret>(cacheFactory: (ttlMs: number) => CacheStorage<string, Ret>) =>
+  (cacheFactory: (ttlMs: number) => CacheStorage<string, unknown>) =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  <E, Fn extends (...args: Array<any>) => TE.TaskEither<E, Ret>>(
+  <E, Ret, Fn extends (...args: Array<any>) => TE.TaskEither<E, Ret>>(
     fn: Fn,
-    ttlMs = MEMOIZE_DEFAULT_TTL_MS,
+    options: { ttlMs: number; cacheKeyName?: string } = {
+      ttlMs: MEMOIZE_DEFAULT_TTL_MS,
+    },
   ): Fn =>
   // @ts-ignore
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -22,13 +24,14 @@ export const memoizeTE =
 
     return TE.tryCatch(
       () =>
-        memoizePromise(
+        pMemoize(
           func,
           {
-            // @ts-ignore
-            cache: cacheFactory(ttlMs),
-            cacheKey: (args) =>
-              `${getFunctionName(fn)}_${JSON.stringify(args)}`,
+            cache: cacheFactory(options.ttlMs) as CacheStorage<
+              string,
+              Awaited<ReturnType<typeof func>>
+            >,
+            cacheKey: getMemoizedFunctionCacheKey(fn, options.cacheKeyName),
           },
           // eslint-disable-next-line max-len
           // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
