@@ -21,4 +21,4 @@ export const getMemoizedFunctionCacheName = (
 export const getMemoizedFunctionCacheKey =
   (fn: Function & { readonly displayName?: string }, cacheKeyName?: string) =>
   (args: Array<unknown>) =>
-    `${getMemoizedFunctionCacheName(fn, cacheKeyName)}_${JSON.stringify(args)}}`
+    `${getMemoizedFunctionCacheName(fn, cacheKeyName)}_${JSON.stringify(args)}`
