@@ -1,5 +1,6 @@
 import mem from 'mem'
-import { MEMOIZE_DEFAULT_TTL_MS } from './const'
+import { MEMOIZE_DEFAULT_OPTIONS, MEMOIZE_DEFAULT_TTL_MS } from './const'
+import { MemoizeOptions } from './types'
 import { getMemoizedFunctionCacheKey } from './utils'
 
 // Types duplicated from `mem` / `p-memoize` since they're not exported and we
@@ -26,14 +27,14 @@ export const memoize =
   (cacheFactory: (ttlMs: number) => MemoizeCacheStorage<string, unknown>) =>
   <Ret, Fn extends (...args: Args) => Ret>(
     fn: Fn,
-    options: { ttlMs: number; cacheKeyName?: string } = {
-      ttlMs: MEMOIZE_DEFAULT_TTL_MS,
-    },
-  ): Fn =>
-    mem(fn, {
-      cache: cacheFactory(options.ttlMs) as MemoizeCacheStorage<
+    options: MemoizeOptions = {},
+  ): Fn => {
+    const options_ = { ...MEMOIZE_DEFAULT_OPTIONS, ...options }
+    return mem(fn, {
+      cache: cacheFactory(options_.ttlMs) as MemoizeCacheStorage<
         string,
         ReturnType<Fn>
       >,
-      cacheKey: getMemoizedFunctionCacheKey(fn, options.cacheKeyName),
+      cacheKey: getMemoizedFunctionCacheKey(fn, options_.cacheKeyName),
     })
+  }

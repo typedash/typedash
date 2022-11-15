@@ -1,1 +1,1 @@
-export * from './memoize'
+export type MemoizeOptions = { ttlMs?: number; cacheKeyName?: string }
