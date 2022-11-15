@@ -1,5 +1,11 @@
 # @typedash/fs
 
+## 1.0.0
+
+### Major Changes
+
+- 75cdec0: Major bump to mark first version with stable typedash version (3.0.0)
+
 ## 0.1.23
 
 ### Patch Changes
