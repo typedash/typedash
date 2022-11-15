@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Domain agnostic utility functions",
   "sideEffects": false,
   "files": [

@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.7
+
+### Patch Changes
+
+- cee6291: Force patch bump to get latest published
+
 ## 2.2.6
 
 ### Patch Changes
