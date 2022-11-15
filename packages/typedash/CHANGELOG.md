@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 2.2.8
+
+### Patch Changes
+
+- 9a38aa2: Remove trailing } from `memoize` cache key generation
+
 ## 2.2.7
 
 ### Patch Changes
