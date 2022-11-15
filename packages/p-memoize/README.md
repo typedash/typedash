@@ -1,3 +1,3 @@
 # @typedash/@typedash/p-memoize
 
-TODO Write me!
+CJS copy of `p-memoize`
