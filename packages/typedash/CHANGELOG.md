@@ -1,94 +1,10 @@
 # @typedash/typedash
 
-## 2.2.10
-
-### Patch Changes
-
-- 180e4a6: Make all memoize options optional
-
-## 2.2.9
-
-### Patch Changes
-
-- 8a17a11: Update memoizeTE to unwrap E before caching
-
-## 2.2.8
-
-### Patch Changes
-
-- 9a38aa2: Remove trailing } from `memoize` cache key generation
-
-## 2.2.7
-
-### Patch Changes
-
-- cee6291: Force patch bump to get latest published
-
-## 2.2.6
-
-### Patch Changes
-
-- 3561aed: Use @typedash/p-memoize for memoization fns
-
-## 2.2.5
-
-### Patch Changes
-
-- 28a6ef0: Pass displayName to memoize fn
-
-## 2.2.4
-
-### Patch Changes
-
-- 35cd707: Avoid using `p-memoize` dep
-
-## 2.2.3
-
-### Patch Changes
-
-- 4314eac: Fix missing imports in memoizeTE
-
-## 2.2.2
-
-### Patch Changes
-
-- 25beebb: Bump to trigger new release
-
-## 2.2.1
-
-### Patch Changes
-
-- 90bfca8: Downgrade mem and p-memoize to avoid ESM issues.
-
-## 2.2.0
-
-### Minor Changes
-
-- 3bb3310: Publish as ESM only
-
-## 2.1.0
-
-### Minor Changes
-
-- a854767: Add `memoizeP` and `memoizeTE`
-
-## 2.0.2
-
-### Patch Changes
-
-- a8ba063: Re-publish to include missing types
-
-## 2.0.1
-
-### Patch Changes
-
-- 7613db2: Export memoize types
-
-## 2.0.0
+## 3.0.0
 
 ### Major Changes
 
-- 705c282: Replace existing `memoize` with custom implementation sing `mem` library.
+- e0ad59a: Add memoize, memoizeP, memoizeTE, update to latest TS version
 
 ## 1.10.0
 
