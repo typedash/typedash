@@ -19,9 +19,6 @@ import { z } from 'zod'
 import { fs } from '@typedash/fs'
 import { R, TE, flow, pipe } from '@typedash/typedash'
 
-import { R, TE, flow, pipe } from '../../utils'
-import { VersionInfo } from './VersionInfo'
-
 const PACKAGE_PATH = path.join(__dirname, '..', 'package.json')
 
 const PackageJson = z.object({ name: z.string() })

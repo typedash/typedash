@@ -14,3 +14,5 @@ export {
   unMilliseconds,
   unsafeParseDate,
 } from 'fp-ts-std/Date'
+
+export type { Milliseconds } from 'fp-ts-std/Date'
