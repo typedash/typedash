@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.1.0
+
+### Minor Changes
+
+- 61ee22c: 🗾 Add A.map Async Methods
+
 ## 3.0.0
 
 ### Major Changes
