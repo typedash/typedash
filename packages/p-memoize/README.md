@@ -1,3 +1,3 @@
-# @typedash/@typedash/p-memoize
+# @typedash/p-memoize
 
 CJS copy of `p-memoize`

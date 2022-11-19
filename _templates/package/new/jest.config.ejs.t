@@ -1,3 +1,7 @@
+---
+to: packages/<%= name %>/jest.config.js
+---
+
 const path = require('path')
 
 module.exports = {
