@@ -1,5 +1,11 @@
 # @typedash/fs
 
+## 1.1.0
+
+### Minor Changes
+
+- c9c6ff1: 🗾 Add A.map Async Methods
+
 ## 1.0.0
 
 ### Major Changes
