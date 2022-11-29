@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.1.1
+
+### Patch Changes
+
+- 2c82a63: 🧵 Add String Padding Methods
+
 ## 3.1.0
 
 ### Minor Changes
