@@ -58,6 +58,7 @@ export {
 } from 'fp-ts-std/String'
 
 export { equals, concat } from 'ramda'
+export { padEnd, padStart, padCharsEnd, padCharsStart } from 'ramda-adjunct'
 
 // TODO: Replace with something else
 export { toInteger } from 'lodash/fp'
