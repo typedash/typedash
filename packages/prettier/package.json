@@ -2,6 +2,7 @@
   "name": "@typedash/prettier",
   "version": "0.0.1",
   "description": "Prettier config file(s)",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "build": "echo \"N/A\"",

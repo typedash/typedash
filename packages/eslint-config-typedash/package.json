@@ -2,6 +2,7 @@
   "name": "@typedash/eslint-config-typedash",
   "version": "0.0.2",
   "description": "Eslint",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "build": "echo \"N/A\"",

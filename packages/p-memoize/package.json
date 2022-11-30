@@ -2,6 +2,7 @@
   "name": "@typedash/p-memoize",
   "version": "7.1.1",
   "description": "CJS copy of p-memoize",
+  "license": "MIT",
   "sideEffects": false,
   "files": [
     "src",

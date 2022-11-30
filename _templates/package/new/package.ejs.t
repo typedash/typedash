@@ -6,6 +6,7 @@ to: packages/<%= name %>/package.json
   "name": "@typedash/<%= name %>",
   "version": "0.0.0",
   "description": "<%= h.changeCase.titleCase(name) %>",
+  "license": "MIT",
   "sideEffects": false,
   "files": [
     "src",

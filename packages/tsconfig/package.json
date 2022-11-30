@@ -2,6 +2,7 @@
   "name": "@typedash/tsconfig",
   "version": "0.0.2",
   "description": "Shared TypeScript Configuration",
+  "license": "MIT",
   "files": [
     "tsconfig.json",
     "tsconfig.cjs.json"

@@ -2,6 +2,7 @@
   "name": "@typedash/fs",
   "version": "1.1.2",
   "description": "`fp-ts` compliant `fs-extra` wrappers",
+  "license": "MIT",
   "sideEffects": false,
   "files": [
     "src",
