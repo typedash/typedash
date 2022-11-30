@@ -1,5 +1,13 @@
 # @typedash/fs
 
+## 1.1.3
+
+### Patch Changes
+
+- d2db2a1: Add MIT license
+- Updated dependencies [d2db2a1]
+  - @typedash/typedash@3.1.2
+
 ## 1.1.2
 
 ### Patch Changes

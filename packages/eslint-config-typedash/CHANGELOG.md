@@ -1,5 +1,13 @@
 # @typedash/eslint-config-typedash
 
+## 0.0.3
+
+### Patch Changes
+
+- d2db2a1: Add MIT license
+- Updated dependencies [d2db2a1]
+  - @typedash/tsconfig@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Domain agnostic utility functions",
   "license": "MIT",
   "sideEffects": false,
@@ -25,7 +25,7 @@
     "test:watch": "yarn test --watch"
   },
   "dependencies": {
-    "@typedash/p-memoize": "^7.1.1",
+    "@typedash/p-memoize": "^7.1.2",
     "@types/lodash": "4.14.177",
     "@types/ramda": "0.27.1",
     "fp-ts": "^2.12.3",
@@ -42,9 +42,9 @@
   },
   "devDependencies": {
     "@relmify/jest-fp-ts": "^2.0.2",
-    "@typedash/eslint-config-typedash": "0.0.2",
-    "@typedash/prettier": "0.0.1",
-    "@typedash/tsconfig": "0.0.2",
+    "@typedash/eslint-config-typedash": "0.0.3",
+    "@typedash/prettier": "0.0.2",
+    "@typedash/tsconfig": "0.0.3",
     "@types/jest": "27.0.3",
     "eslint": "8.9.0",
     "io-ts": "^2.2.19",

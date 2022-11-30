@@ -1,6 +1,6 @@
 {
   "name": "@typedash/prettier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prettier config file(s)",
   "license": "MIT",
   "main": "index.js",
