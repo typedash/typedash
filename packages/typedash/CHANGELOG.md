@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.3.0
+
+### Minor Changes
+
+- f5b6b4a: 🔢 Number comparison functions, flipped
+
 ## 3.2.0
 
 ### Minor Changes
