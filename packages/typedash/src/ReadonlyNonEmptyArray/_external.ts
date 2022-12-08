@@ -48,6 +48,7 @@ export {
   modifyAt,
   modifyHead,
   modifyLast,
+  Monad,
   of,
   prependAll,
   range,

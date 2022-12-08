@@ -48,6 +48,8 @@ export {
   map,
   match,
   matchW,
+  Monad,
+  MonadThrow,
   none,
   of,
   partition,
