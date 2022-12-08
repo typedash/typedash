@@ -1178,11 +1178,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typedash/eslint-config-typedash@*, @typedash/eslint-config-typedash@0.0.2, @typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash":
+"@typedash/eslint-config-typedash@*, @typedash/eslint-config-typedash@0.0.3, @typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/eslint-config-typedash@workspace:packages/eslint-config-typedash"
   dependencies:
-    "@typedash/tsconfig": 0.0.2
+    "@typedash/tsconfig": 0.0.3
     "@typescript-eslint/eslint-plugin": 5.12.1
     "@typescript-eslint/parser": 5.12.1
     eslint: 8.9.0
@@ -1205,10 +1205,10 @@ __metadata:
   resolution: "@typedash/fs@workspace:packages/fs"
   dependencies:
     "@relmify/jest-fp-ts": ^2.0.2
-    "@typedash/eslint-config-typedash": 0.0.2
-    "@typedash/prettier": 0.0.1
-    "@typedash/tsconfig": 0.0.2
-    "@typedash/typedash": 3.0.0
+    "@typedash/eslint-config-typedash": 0.0.3
+    "@typedash/prettier": 0.0.2
+    "@typedash/tsconfig": 0.0.3
+    "@typedash/typedash": 3.1.2
     "@types/fs-extra": ^9.0.13
     "@types/jest": 27.0.3
     eslint: 8.9.0
@@ -1223,13 +1223,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/p-memoize@^7.1.1, @typedash/p-memoize@workspace:packages/p-memoize":
+"@typedash/p-memoize@^7.1.2, @typedash/p-memoize@workspace:packages/p-memoize":
   version: 0.0.0-use.local
   resolution: "@typedash/p-memoize@workspace:packages/p-memoize"
   dependencies:
-    "@typedash/eslint-config-typedash": 0.0.2
-    "@typedash/prettier": 0.0.1
-    "@typedash/tsconfig": 0.0.2
+    "@typedash/eslint-config-typedash": 0.0.3
+    "@typedash/prettier": 0.0.2
+    "@typedash/tsconfig": 0.0.3
     eslint: 8.9.0
     npm-run-all: 4.1.5
     onchange: 7.1.0
@@ -1239,13 +1239,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/prettier@*, @typedash/prettier@0.0.1, @typedash/prettier@workspace:packages/prettier":
+"@typedash/prettier@*, @typedash/prettier@0.0.2, @typedash/prettier@workspace:packages/prettier":
   version: 0.0.0-use.local
   resolution: "@typedash/prettier@workspace:packages/prettier"
   languageName: unknown
   linkType: soft
 
-"@typedash/tsconfig@*, @typedash/tsconfig@0.0.2, @typedash/tsconfig@workspace:packages/tsconfig":
+"@typedash/tsconfig@*, @typedash/tsconfig@0.0.3, @typedash/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
   resolution: "@typedash/tsconfig@workspace:packages/tsconfig"
   peerDependencies:
@@ -1253,15 +1253,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@3.0.0, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@3.1.2, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
     "@relmify/jest-fp-ts": ^2.0.2
-    "@typedash/eslint-config-typedash": 0.0.2
-    "@typedash/p-memoize": ^7.1.1
-    "@typedash/prettier": 0.0.1
-    "@typedash/tsconfig": 0.0.2
+    "@typedash/eslint-config-typedash": 0.0.3
+    "@typedash/p-memoize": ^7.1.2
+    "@typedash/prettier": 0.0.2
+    "@typedash/tsconfig": 0.0.3
     "@types/jest": 27.0.3
     "@types/lodash": 4.14.177
     "@types/ramda": 0.27.1
