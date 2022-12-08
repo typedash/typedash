@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.4.0
+
+### Minor Changes
+
+- c348e7c: 🔢 Fix number relation types
+
 ## 3.3.0
 
 ### Minor Changes
