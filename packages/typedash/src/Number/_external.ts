@@ -20,3 +20,5 @@ export {
   subtract,
   toFinite,
 } from 'fp-ts-std/Number'
+
+export { gt, gte, lt, lte } from 'ramda'
