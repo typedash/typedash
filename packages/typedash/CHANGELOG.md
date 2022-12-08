@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.4.1
+
+### Patch Changes
+
+- c3073f4: 📦 Exposed all monad, monoid, ord
+
 ## 3.4.0
 
 ### Minor Changes
