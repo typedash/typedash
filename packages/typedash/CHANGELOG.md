@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.2.0
+
+### Minor Changes
+
+- 74758dc: 🔢 Number comparison functions
+
 ## 3.1.2
 
 ### Patch Changes
