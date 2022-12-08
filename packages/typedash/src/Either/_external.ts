@@ -77,6 +77,8 @@ export {
   traverseReadonlyNonEmptyArrayWithIndex,
   tryCatch,
   tryCatchK,
+  Monad,
+  MonadThrow,
 } from 'fp-ts/Either'
 
 export type { Either, Left, Right } from 'fp-ts/Either'

@@ -86,6 +86,7 @@ export {
   matchRightW,
   matchW,
   modifyAt,
+  Monad,
   of,
   partition,
   partitionMap,

@@ -1,5 +1,6 @@
 // https://gcanti.github.io/fp-ts/modules/TaskEither.ts.html
 export {
+  // fromTask, // @see: `./fromTask.ts`
   alt,
   altW,
   ap,
@@ -58,7 +59,6 @@ export {
   fromOption,
   fromOptionK,
   fromPredicate,
-  // fromTask, // @see: `./fromTask.ts`
   fromTaskK,
   fromTaskOption,
   fromTaskOptionK,
@@ -74,6 +74,10 @@ export {
   matchE,
   matchEW,
   matchW,
+  Monad,
+  MonadIO,
+  MonadTask,
+  MonadThrow,
   of,
   orElse,
   orElseFirst,

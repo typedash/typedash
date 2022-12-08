@@ -134,6 +134,7 @@ export {
   zip,
   zipWith,
 } from 'fp-ts/Array'
+export type { Monad } from 'fp-ts/Array'
 
 export {
   aperture,
