@@ -1,7 +1,4 @@
-import { gt as _gt } from 'ramda'
-import { flip } from '../function/_external'
-
 /**
- * @note This is a `flip` version of `ramda.gt`
+ * @description This is a `flip` version of `ramda.gt`
  */
-export const gt = flip(_gt)
+export const gt = (b: number) => (a: number) => a > b
