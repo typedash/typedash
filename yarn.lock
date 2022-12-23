@@ -1208,7 +1208,7 @@ __metadata:
     "@typedash/eslint-config-typedash": 0.0.3
     "@typedash/prettier": 0.0.2
     "@typedash/tsconfig": 0.0.3
-    "@typedash/typedash": 3.1.2
+    "@typedash/typedash": 3.4.1
     "@types/fs-extra": ^9.0.13
     "@types/jest": 27.0.3
     eslint: 8.9.0
@@ -1253,7 +1253,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@3.1.2, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@3.4.1, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
@@ -1265,6 +1265,7 @@ __metadata:
     "@types/jest": 27.0.3
     "@types/lodash": 4.14.177
     "@types/ramda": 0.27.1
+    browser-util-inspect: ^0.2.0
     eslint: 8.9.0
     fp-ts: ^2.12.3
     fp-ts-std: 0.13.1
@@ -2129,6 +2130,13 @@ __metadata:
   version: 1.0.0
   resolution: "browser-process-hrtime@npm:1.0.0"
   checksum: e30f868cdb770b1201afb714ad1575dd86366b6e861900884665fb627109b3cc757c40067d3bfee1ff2a29c835257ea30725a8018a9afd02ac1c24b408b1e45f
+  languageName: node
+  linkType: hard
+
+"browser-util-inspect@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "browser-util-inspect@npm:0.2.0"
+  checksum: 5fa071790a7bfcf60818a5cae6ad3686546addcc07f7cb4f3f3fc7a67afac69bee6aabc5457020bbc15406537060f84e373d8c9aae0ba8eb3b519407dca987d0
   languageName: node
   linkType: hard
 
