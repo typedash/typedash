@@ -1,5 +1,12 @@
 # @typedash/fs
 
+## 1.1.8
+
+### Patch Changes
+
+- Updated dependencies [141b002]
+  - @typedash/typedash@3.4.2
+
 ## 1.1.7
 
 ### Patch Changes

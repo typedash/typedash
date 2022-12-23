@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.4.2
+
+### Patch Changes
+
+- 141b002: 🪵 Add Record methods, fix log and logTag
+
 ## 3.4.1
 
 ### Patch Changes
