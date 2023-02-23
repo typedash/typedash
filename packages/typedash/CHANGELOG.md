@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.5.1
+
+### Patch Changes
+
+- 0e52536: Make `TE.lift`'s left a generic
+
 ## 3.5.0
 
 ### Minor Changes

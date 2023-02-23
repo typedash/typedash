@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "description": "Domain agnostic utility functions",
   "license": "MIT",
   "sideEffects": false,
