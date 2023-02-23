@@ -1874,6 +1874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],\
             ["ramda", "npm:0.27.1"],\
             ["ramda-adjunct", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.35.0"],\
+            ["retry-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.1.4"],\
             ["spectacles-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:1.0.7"],\
             ["ts-jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.0.7"],\
             ["ts-pattern", "npm:4.0.4"],\
@@ -8517,6 +8518,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/retry-npm-0.12.0-72ac7fb4cc-623bd7d2e5.zip/node_modules/retry/",\
           "packageDependencies": [\
             ["retry", "npm:0.12.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["retry-ts", [\
+        ["npm:0.1.4", {\
+          "packageLocation": "./.yarn/cache/retry-ts-npm-0.1.4-402bab585c-a5a74a4626.zip/node_modules/retry-ts/",\
+          "packageDependencies": [\
+            ["retry-ts", "npm:0.1.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.1.4", {\
+          "packageLocation": "./.yarn/__virtual__/retry-ts-virtual-43b0da2fa8/0/cache/retry-ts-npm-0.1.4-402bab585c-a5a74a4626.zip/node_modules/retry-ts/",\
+          "packageDependencies": [\
+            ["retry-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.1.4"],\
+            ["@types/fp-ts", null],\
+            ["fp-ts", "npm:2.12.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/fp-ts",\
+            "fp-ts"\
           ],\
           "linkType": "HARD"\
         }]\
