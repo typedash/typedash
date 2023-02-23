@@ -36,6 +36,7 @@
     "newtype-ts": "0.3.5",
     "ramda": "0.27.1",
     "ramda-adjunct": "2.35.0",
+    "retry-ts": "^0.1.4",
     "spectacles-ts": "^1.0.7",
     "ts-pattern": "4.0.4",
     "zod": "^3.19.1"
