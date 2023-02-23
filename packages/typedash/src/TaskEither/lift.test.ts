@@ -22,8 +22,8 @@ test('function without args', async () => {
 
 test('onRejected provided', async () => {
   const prom = () => Promise.reject(new Error('custom error message'))
-  const teLiftedFunc = lift((error) => error as Error)(prom)
+  const teLiftedFunc = lift(() => 'foobar')(prom)
   const result = await pipe(teLiftedFunc())()
 
-  expect(result).toEqualLeft(new Error('custom error message'))
+  expect(result).toEqualLeft('foobar')
 })

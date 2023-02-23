@@ -6,7 +6,20 @@ const defaultOnRejected = (reason: unknown) =>
   newError(`An error was encountered. ${reason}`)
 
 export const lift =
-  <OnRejected extends (error: unknown) => Error>(onRejected?: OnRejected) =>
+  <
+    ProvidedOnRejected extends (error: unknown) => unknown,
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    OnRejected extends ProvidedOnRejected extends Function
+      ? ProvidedOnRejected
+      : typeof defaultOnRejected,
+  >(
+    onRejected?: ProvidedOnRejected,
+  ) =>
   <Args extends Array<unknown>, Data>(fn: (...args: Args) => Promise<Data>) =>
-  (...args: Args): TE.TaskEither<Error, Data> =>
-    TE.tryCatch(() => fn(...args), onRejected || defaultOnRejected)
+  (...args: Args) => {
+    const whenRejected = (onRejected ?? defaultOnRejected) as OnRejected
+    return TE.tryCatch(() => fn(...args), whenRejected) as TE.TaskEither<
+      ReturnType<OnRejected>,
+      Data
+    >
+  }
