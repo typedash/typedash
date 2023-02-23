@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.5.0
+
+### Minor Changes
+
+- 3ec495e: Add `TE.lift` and `TE.retry`
+
 ## 3.4.2
 
 ### Patch Changes
