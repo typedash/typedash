@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "3.1.2",
+  "version": "3.4.2",
   "description": "Domain agnostic utility functions",
   "license": "MIT",
   "sideEffects": false,
@@ -28,6 +28,7 @@
     "@typedash/p-memoize": "^7.1.2",
     "@types/lodash": "4.14.177",
     "@types/ramda": "0.27.1",
+    "browser-util-inspect": "^0.2.0",
     "fp-ts": "^2.12.3",
     "fp-ts-std": "0.13.1",
     "lodash": "4.17.21",

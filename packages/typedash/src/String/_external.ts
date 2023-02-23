@@ -6,6 +6,7 @@ export {
   includes,
   isEmpty,
   isString,
+  Monoid,
   Ord,
   replace,
   size,

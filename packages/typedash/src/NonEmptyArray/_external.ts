@@ -77,6 +77,7 @@ export {
   updateLast,
   zip,
   zipWith,
+  Monad,
 } from 'fp-ts/NonEmptyArray'
 
 export { includes, sort, sortBy, groupWith, uniq, uniqBy } from 'ramda'

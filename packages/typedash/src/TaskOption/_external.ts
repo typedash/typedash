@@ -28,6 +28,9 @@ export {
   matchE,
   matchEW,
   matchW,
+  Monad,
+  MonadIO,
+  MonadTask,
   none,
   some,
 } from 'fp-ts/TaskOption'

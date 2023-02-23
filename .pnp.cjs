@@ -1859,6 +1859,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.3"],\
             ["@types/lodash", "npm:4.14.177"],\
             ["@types/ramda", "npm:0.27.1"],\
+            ["browser-util-inspect", "npm:0.2.0"],\
             ["eslint", "npm:8.9.0"],\
             ["fp-ts", "npm:2.12.3"],\
             ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],\
@@ -2989,6 +2990,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/browser-process-hrtime-npm-1.0.0-db700805c2-e30f868cdb.zip/node_modules/browser-process-hrtime/",\
           "packageDependencies": [\
             ["browser-process-hrtime", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["browser-util-inspect", [\
+        ["npm:0.2.0", {\
+          "packageLocation": "./.yarn/cache/browser-util-inspect-npm-0.2.0-5d0e0958c9-5fa071790a.zip/node_modules/browser-util-inspect/",\
+          "packageDependencies": [\
+            ["browser-util-inspect", "npm:0.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\

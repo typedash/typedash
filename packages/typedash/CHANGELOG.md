@@ -1,5 +1,35 @@
 # @typedash/typedash
 
+## 3.4.2
+
+### Patch Changes
+
+- 141b002: 🪵 Add Record methods, fix log and logTag
+
+## 3.4.1
+
+### Patch Changes
+
+- c3073f4: 📦 Exposed all monad, monoid, ord
+
+## 3.4.0
+
+### Minor Changes
+
+- c348e7c: 🔢 Fix number relation types
+
+## 3.3.0
+
+### Minor Changes
+
+- f5b6b4a: 🔢 Number comparison functions, flipped
+
+## 3.2.0
+
+### Minor Changes
+
+- 74758dc: 🔢 Number comparison functions
+
 ## 3.1.2
 
 ### Patch Changes
