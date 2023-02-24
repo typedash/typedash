@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.5.2
+
+### Patch Changes
+
+- c13a4a0: Add `TE.lift` example
+
 ## 3.5.1
 
 ### Patch Changes
