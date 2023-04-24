@@ -1,5 +1,23 @@
 # @typedash/typedash
 
+## 3.5.2
+
+### Patch Changes
+
+- c13a4a0: Add `TE.lift` example
+
+## 3.5.1
+
+### Patch Changes
+
+- 0e52536: Make `TE.lift`'s left a generic
+
+## 3.5.0
+
+### Minor Changes
+
+- 3ec495e: Add `TE.lift` and `TE.retry`
+
 ## 3.4.2
 
 ### Patch Changes

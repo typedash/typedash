@@ -1208,7 +1208,7 @@ __metadata:
     "@typedash/eslint-config-typedash": 0.0.3
     "@typedash/prettier": 0.0.2
     "@typedash/tsconfig": 0.0.3
-    "@typedash/typedash": 3.4.1
+    "@typedash/typedash": 3.4.2
     "@types/fs-extra": ^9.0.13
     "@types/jest": 27.0.3
     eslint: 8.9.0
@@ -1253,7 +1253,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@3.4.1, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@3.4.2, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
@@ -1280,6 +1280,7 @@ __metadata:
     prettier: 2.5.1
     ramda: 0.27.1
     ramda-adjunct: 2.35.0
+    retry-ts: ^0.1.4
     spectacles-ts: ^1.0.7
     ts-jest: 27.0.7
     ts-pattern: 4.0.4
@@ -6890,6 +6891,15 @@ __metadata:
     onetime: "npm:^5.1.0"
     signal-exit: "npm:^3.0.2"
   checksum: f877dd8741796b909f2a82454ec111afb84eb45890eb49ac947d87991379406b3b83ff9673a46012fca0d7844bb989f45cc5b788254cf1a39b6b5a9659de0630
+  languageName: node
+  linkType: hard
+
+"retry-ts@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "retry-ts@npm:0.1.4"
+  peerDependencies:
+    fp-ts: ^2.4.0
+  checksum: a5a74a4626d6821dc4ed1c201ff634288d91a68ec0d6712ee96f33a631bbd52a40e7d8bcbd7f23d564bdb1c9711fa010d07d5a38702c2a89639049afadd6fbe6
   languageName: node
   linkType: hard
 
