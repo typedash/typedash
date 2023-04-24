@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { pipe } from '../function/_external'
-import { tapLog } from '../function/tapLog'
+import { tapLogTagData } from '../function/tapLogTagData'
 import * as E from './_external'
 
 /**
@@ -10,10 +10,12 @@ import * as E from './_external'
  * @example
  * pipe(
  *   E.right('userId_5'),
- *   E.log, // console.log('userId_5')
+ *   E.logTagData('tag'), // console.log('tag', 'userId_5')
  *   E.map((x) => x), // x is still `userId_5`
  *   ...
  * )
  */
-export const log = <E, A>(ma: E.Either<E, A>): E.Either<E, A> =>
-  pipe(ma, E.map(tapLog))
+export const logTagData =
+  (tag: string) =>
+  <E, A>(ma: E.Either<E, A>): E.Either<E, A> =>
+    pipe(ma, E.map(tapLogTagData(tag)))

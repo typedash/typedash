@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 import { pipe } from '../function/_external'
-import { tapLogTag } from '../function/tapLogTag'
+import { tapLogTagData } from '../function/tapLogTagData'
 import * as O from './_external'
 
 /**
@@ -9,12 +10,12 @@ import * as O from './_external'
  * @example
  * pipe(
  *   O.of('userId_5'),
- *   O.logTag('made it here'),
+ *   O.logTagData('tag'), // console.log('tag', 'userId_5')
  *   O.map((x) => x), // x is still `userId_5`
  *   ...
  * )
  */
-export const logTag =
+export const logTagData =
   (tag: string) =>
   <A>(ma: O.Option<A>): O.Option<A> =>
-    pipe(ma, O.map(tapLogTag(tag)))
+    pipe(ma, O.map(tapLogTagData(tag)))

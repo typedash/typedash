@@ -1,16 +1,15 @@
-/* eslint-disable no-console */
 import { pipe } from '../function/_external'
 import { tapLogTag } from '../function/tapLogTag'
 import * as TO from './_external'
 
 /**
  * @description
- * Logs the value inside the TO.
+ * Logs the tag, passes value through.
  *
  * @example
  * pipe(
  *   TO.of('userId_5'),
- *   TO.logTag('tag'), // console.log('tag', 'userId_5')
+ *   TO.logTag('made it here'),
  *   TO.map((x) => x), // x is still `userId_5`
  *   ...
  * )

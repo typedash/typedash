@@ -1,16 +1,15 @@
-/* eslint-disable no-console */
+import { tapLogTag } from '../function'
 import { pipe } from '../function/_external'
-import { tapLogTag } from '../function/tapLogTag'
 import * as E from './_external'
 
 /**
  * @description
- * Logs the value inside the E.
+ * Logs the tag, but not the value.
  *
  * @example
  * pipe(
  *   E.right('userId_5'),
- *   E.logTag('tag'), // console.log('tag', 'userId_5')
+ *   E.logTag('made it here'),
  *   E.map((x) => x), // x is still `userId_5`
  *   ...
  * )

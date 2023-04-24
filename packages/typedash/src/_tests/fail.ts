@@ -1,4 +1,4 @@
-import { tapLog } from '../function/tapLog'
+import { tapLog } from '../function/tapLogData'
 import { R, flow, throwError } from '../index'
 
 export const fail = flow(

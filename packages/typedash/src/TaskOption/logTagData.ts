@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { pipe } from '../function/_external'
-import { tapLog } from '../function/tapLog'
+import { tapLogTagData } from '../function/tapLogTagData'
 import * as TO from './_external'
 
 /**
@@ -10,10 +10,12 @@ import * as TO from './_external'
  * @example
  * pipe(
  *   TO.of('userId_5'),
- *   TO.log, // console.log('userId_5')
+ *   TO.logTagData('tag'), // console.log('tag', 'userId_5')
  *   TO.map((x) => x), // x is still `userId_5`
  *   ...
  * )
  */
-export const log = <A>(ma: TO.TaskOption<A>): TO.TaskOption<A> =>
-  pipe(ma, TO.map(tapLog))
+export const logTagData =
+  (tag: string) =>
+  <A>(ma: TO.TaskOption<A>): TO.TaskOption<A> =>
+    pipe(ma, TO.map(tapLogTagData(tag)))

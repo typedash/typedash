@@ -1,20 +1,21 @@
+/* eslint-disable no-console */
 import { pipe } from '../function/_external'
-import { tapLogTag } from '../function/tapLogTag'
+import { tapLogTagData } from '../function/tapLogTagData'
 import * as T from './_external'
 
 /**
  * @description
- * Logs the tag, passing the value through
+ * Logs the value inside the T
  *
  * @example
  * pipe(
  *   T.of('userId_5'),
- *   T.logTag('made it here'),
+ *   T.logTagData('tag'), // console.log('tag', 'userId_5')
  *   T.map((x) => x), // x is still `userId_5`
  *   ...
  * )
  */
-export const logTag =
+export const logTagData =
   (tag: string) =>
   <A>(ma: T.Task<A>): T.Task<A> =>
-    pipe(ma, T.map(tapLogTag(tag)))
+    pipe(ma, T.map(tapLogTagData(tag)))
