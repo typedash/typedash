@@ -1,5 +1,5 @@
 import { pipe } from '../function/_external'
-import * as TE from './_external'
+import * as E from './_external'
 
 /**
  * @description
@@ -7,29 +7,29 @@ import * as TE from './_external'
  *
  * @example
  * pipe(
- *   TE.right({ id1: '1', id2: '2' }),
- *   TE.bindMerge(({ id1, id2 }) =>
- *     TE.allObj({
- *       user1: TE.right(id1),
- *       user2: TE.right(id2),
+ *   E.right({ id1: '1', id2: '2' }),
+ *   E.bindMerge(({ id1, id2 }) =>
+ *     E.allObj({
+ *       user1: E.right(id1),
+ *       user2: E.right(id2),
  *     })
  *   ),
- *   TE.map(({ id1, id2, user1, user2 }) => {
+ *   E.map(({ id1, id2, user1, user2 }) => {
  *     console.log({ id1, id2, user1, user2 })
  *   }),
  * )
  */
 export const bindMerge =
   <A extends Record<string, unknown>, E, B extends Record<string, unknown>>(
-    f: (a: A) => TE.TaskEither<E, B>,
+    f: (a: A) => E.Either<E, B>,
   ) =>
-  (ma: TE.TaskEither<E, A>): TE.TaskEither<E, A & B> =>
+  (ma: E.Either<E, A>): E.Either<E, A & B> =>
     pipe(
       ma,
-      TE.chain((a) =>
+      E.chain((a) =>
         pipe(
           f(a),
-          TE.map((b) => ({ ...a, ...b })),
+          E.map((b) => ({ ...a, ...b })),
         ),
       ),
     )
