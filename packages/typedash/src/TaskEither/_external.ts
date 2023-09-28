@@ -107,3 +107,5 @@ export {
   tryCatchK,
 } from 'fp-ts/TaskEither'
 export type { TaskEither } from 'fp-ts/TaskEither'
+
+export { unsafeUnwrap, unsafeUnwrapLeft } from 'fp-ts-std/TaskEither'
