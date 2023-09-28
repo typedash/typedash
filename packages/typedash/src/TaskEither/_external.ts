@@ -65,7 +65,7 @@ export {
   getApplicativeTaskValidation,
   getOrElse,
   getOrElseW,
-  left,
+  left as _left,
   leftIO,
   leftTask,
   map,
