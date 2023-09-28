@@ -8,9 +8,9 @@ import * as TE from './_external'
  *
  * @example
  * pipe(
- *  12345,
- *  TE.tryCatchKToError(fetchUserById),
- *  TE.map(R.prop('name')),
+ *   12345,
+ *   TE.tryCatchKToError(fetchUserById),
+ *   TE.map(R.prop('name')),
  * )
  */
 export const tryCatchKToError = <A extends ReadonlyArray<unknown>, B>(

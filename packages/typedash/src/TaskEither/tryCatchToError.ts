@@ -9,8 +9,8 @@ import * as TE from './_external'
  *
  * @example
  * pipe(
- *  TE.tryCatchToError(() => new Promise(5)),
- *  TE.map(x => x + 1),
+ *   TE.tryCatchToError(() => new Promise(5)),
+ *   TE.map(x => x + 1),
  * )
  */
 export const tryCatchToError = <A>(fn: Lazy<Promise<A>>) =>
