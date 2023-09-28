@@ -2,6 +2,7 @@ import { Monoid, constantDelay, limitRetries } from 'retry-ts'
 import { pipe } from '../function'
 import * as TE from './_external'
 import { getOrThrowError } from './getOrThrowError'
+import { left } from './left'
 import { retry } from './retry'
 
 test('retries according to the policy', async () => {
@@ -15,7 +16,7 @@ test('retries according to the policy', async () => {
     }
 
     retries = retries + 1
-    return TE.left(new Error('fail'))
+    return left(new Error('fail'))
   })
 
   const retryPolicy = Monoid.concat(
