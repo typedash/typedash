@@ -1208,7 +1208,7 @@ __metadata:
     "@typedash/eslint-config-typedash": 0.0.3
     "@typedash/prettier": 0.0.2
     "@typedash/tsconfig": 0.0.3
-    "@typedash/typedash": 3.4.2
+    "@typedash/typedash": 3.5.2
     "@types/fs-extra": ^9.0.13
     "@types/jest": 27.0.3
     eslint: 8.9.0
@@ -1253,7 +1253,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@3.4.2, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@3.5.2, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
