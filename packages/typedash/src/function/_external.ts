@@ -20,12 +20,9 @@ export {
 } from 'fp-ts/function'
 export type { Lazy } from 'fp-ts/function'
 
-export { and, not, or } from 'fp-ts/Predicate'
-
 export { ifElse, when, withIndex, unless } from 'fp-ts-std/Function'
 
 export {
-  allPass,
   any,
   defaultTo,
   equals,
@@ -88,3 +85,27 @@ export const isString = (): undefined => undefined
  * @deprecated Look for this method implemented for your data type.
  */
 export const isEmpty = (): undefined => undefined
+
+/**
+ * @description Deprecated.
+ * @deprecated Use PRED.allPass
+ */
+export const allPass = (): undefined => undefined
+
+/**
+ * @description Deprecated.
+ * @deprecated Use PRED.and
+ */
+export const and = (): undefined => undefined
+
+/**
+ * @description Deprecated.
+ * @deprecated Use PRED.not
+ */
+export const not = (): undefined => undefined
+
+/**
+ * @description Deprecated.
+ * @deprecated Use PRED.or
+ */
+export const or = (): undefined => undefined
