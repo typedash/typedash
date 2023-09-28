@@ -1,6 +1,6 @@
 {
   "name": "@typedash/fs",
-  "version": "1.1.11",
+  "version": "1.2.0",
   "description": "`fp-ts` compliant `fs-extra` wrappers",
   "license": "MIT",
   "sideEffects": false,
@@ -25,7 +25,7 @@
     "test:watch": "echo \"N/A\""
   },
   "dependencies": {
-    "@typedash/typedash": "3.5.2",
+    "@typedash/typedash": "3.6.0",
     "fs-extra": "^10.1.0"
   },
   "devDependencies": {

@@ -1,5 +1,12 @@
 # @typedash/typedash
 
+## 3.6.0
+
+### Minor Changes
+
+- 89a222a: 🪢 Add 'bindValue' and flesh out TaskOption.
+- 1da5af0: 🧶 Added some odds and ends
+
 ## 3.5.2
 
 ### Patch Changes
