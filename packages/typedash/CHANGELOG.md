@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.6.2
+
+### Patch Changes
+
+- e3aa736: ؟ Add custom 'TE.left'
+
 ## 3.6.1
 
 ### Patch Changes
