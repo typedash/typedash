@@ -1,5 +1,13 @@
 # @typedash/fs
 
+## 1.2.1
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+- Updated dependencies [77722a9]
+  - @typedash/typedash@3.6.1
+
 ## 1.2.0
 
 ### Minor Changes

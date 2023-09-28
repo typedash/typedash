@@ -1,6 +1,6 @@
 {
   "name": "@typedash/p-memoize",
-  "version": "7.1.2",
+  "version": "7.1.3",
   "description": "CJS copy of p-memoize",
   "license": "MIT",
   "sideEffects": false,
@@ -24,9 +24,9 @@
     "test": "echo \"N/A\""
   },
   "devDependencies": {
-    "@typedash/eslint-config-typedash": "0.0.3",
-    "@typedash/prettier": "0.0.2",
-    "@typedash/tsconfig": "0.0.3",
+    "@typedash/eslint-config-typedash": "0.0.4",
+    "@typedash/prettier": "0.0.3",
+    "@typedash/tsconfig": "0.0.4",
     "eslint": "8.9.0",
     "npm-run-all": "4.1.5",
     "onchange": "7.1.0",

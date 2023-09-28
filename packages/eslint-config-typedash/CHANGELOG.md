@@ -1,5 +1,13 @@
 # @typedash/eslint-config-typedash
 
+## 0.0.4
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+- Updated dependencies [77722a9]
+  - @typedash/tsconfig@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

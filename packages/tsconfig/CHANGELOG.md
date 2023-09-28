@@ -1,5 +1,11 @@
 # @typedash/tsconfig
 
+## 0.0.4
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+
 ## 0.0.3
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @typedash/typedash
 
+## 3.6.1
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+- Updated dependencies [77722a9]
+  - @typedash/p-memoize@7.1.3
+
 ## 3.6.0
 
 ### Minor Changes
