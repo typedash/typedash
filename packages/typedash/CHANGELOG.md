@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.6.3
+
+### Patch Changes
+
+- 61fbd8d: 🖨️ Print errors better with S.stringify
+
 ## 3.6.2
 
 ### Patch Changes
