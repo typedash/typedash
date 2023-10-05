@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.6.4
+
+### Patch Changes
+
+- 9ebbbf8: 📦 Package bump
+
 ## 3.6.3
 
 ### Patch Changes
