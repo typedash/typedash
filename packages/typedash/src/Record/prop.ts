@@ -11,13 +11,7 @@
  *   R.prop('foo'),
  * ) // 5
  */
-type Magic<TObject, TKey extends keyof TObject> = (
-  object: TObject,
-) => TObject[TKey]
-
 export const prop =
-  <TObject extends object, TKey extends keyof TObject>(
-    key: TKey,
-  ): Magic<TObject, TKey> =>
-  (object) =>
+  <TObject extends object, TKey extends keyof TObject>(key: TKey) =>
+  (object: TObject): TObject[TKey] =>
     object[key]
