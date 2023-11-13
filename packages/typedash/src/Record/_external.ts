@@ -63,16 +63,23 @@ export {
 } from 'fp-ts/Record'
 
 export {
-  pick,
-  omit,
   invertAll,
-  merge,
-  reject,
-  values,
   invertLast,
   lookupV,
-  pickFrom,
+  omit,
+  pick,
+  reject,
+  values,
 } from 'fp-ts-std/Record'
+
+// TODO: Suppose we should make a "Struct" module- waiting for more of a reason.
+export {
+  merge,
+  omitFrom,
+  pickFrom,
+  renameKey,
+  withDefaults,
+} from 'fp-ts-std/Struct'
 
 export {
   assoc,
@@ -140,4 +147,4 @@ export const propEq = (): undefined => undefined
  * @description Deprecated
  * @deprecated Use `R.of`
  */
-export const singleton = () => undefined
+export const singleton = (): undefined => undefined

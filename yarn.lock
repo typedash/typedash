@@ -1208,7 +1208,7 @@ __metadata:
     "@typedash/eslint-config-typedash": 0.0.4
     "@typedash/prettier": 0.0.3
     "@typedash/tsconfig": 0.0.4
-    "@typedash/typedash": 3.6.2
+    "@typedash/typedash": 3.6.4
     "@types/fs-extra": ^9.0.13
     "@types/jest": 27.0.3
     eslint: 8.9.0
@@ -1253,7 +1253,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@typedash/typedash@3.6.2, @typedash/typedash@workspace:packages/typedash":
+"@typedash/typedash@3.6.4, @typedash/typedash@workspace:packages/typedash":
   version: 0.0.0-use.local
   resolution: "@typedash/typedash@workspace:packages/typedash"
   dependencies:
@@ -1263,15 +1263,13 @@ __metadata:
     "@typedash/prettier": 0.0.3
     "@typedash/tsconfig": 0.0.4
     "@types/jest": 27.0.3
-    "@types/lodash": 4.14.177
     "@types/ramda": 0.27.1
     browser-util-inspect: ^0.2.0
     eslint: 8.9.0
     fp-ts: ^2.12.3
-    fp-ts-std: 0.13.1
+    fp-ts-std: 0.18.0
     io-ts: ^2.2.19
     jest: 27.3.1
-    lodash: 4.17.21
     mem: 8.1.1
     monocle-ts: 2.3.12
     newtype-ts: 0.3.5
@@ -1411,13 +1409,6 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
-  languageName: node
-  linkType: hard
-
-"@types/lodash@npm:4.14.177":
-  version: 4.14.177
-  resolution: "@types/lodash@npm:4.14.177"
-  checksum: 00f9eb300ed5219cfbabb3448d4a71744895edad60dcfda9f028c0808a50eb6ad1ca9f673b56a85f85668a4ea54b9870643625468a747039c435643e52253a75
   languageName: node
   linkType: hard
 
@@ -3734,14 +3725,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fp-ts-std@npm:0.13.1":
-  version: 0.13.1
-  resolution: "fp-ts-std@npm:0.13.1"
+"fp-ts-std@npm:0.18.0":
+  version: 0.18.0
+  resolution: "fp-ts-std@npm:0.18.0"
   peerDependencies:
-    fp-ts: ^2.11.0
+    fp-ts: ^2.16.0
     monocle-ts: ^2.3.0
     newtype-ts: ^0.3.0
-  checksum: 27c423ba4bbb0d6ede98d4a90b47f8de51c8d2a524271268677afdfa97ae9dc1f98d30aa83ea3780e7ec03257eae206b73e677e8bb80654a32a96ff13c546fcd
+  checksum: c9f3d216536b14c3cb4db68cc41efeb72460bf659f2152bd3b3869ced24b61457e85e8f19bb3c7a4c4525444f441b0ac14e5141c64ac58d9f5eccec44905466e
   languageName: node
   linkType: hard
 
@@ -5509,7 +5500,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7

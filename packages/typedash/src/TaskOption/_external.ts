@@ -74,3 +74,5 @@ export {
   zero,
 } from 'fp-ts/TaskOption'
 export type { TaskOption } from 'fp-ts/TaskOption'
+
+export { pass, unsafeExpect, unsafeUnwrap } from 'fp-ts-std/TaskOption'

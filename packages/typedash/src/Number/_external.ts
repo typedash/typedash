@@ -1,12 +1,16 @@
 export { Eq, isNumber, MonoidProduct, MonoidSum, Ord } from 'fp-ts/number'
 export {
   add,
+  BoundedSafe,
   decrement,
+  digits,
   divide,
+  EnumInt,
   floatFromString,
   fromString,
   fromStringWithRadix,
   increment,
+  integerFromString,
   isFinite,
   isNegative,
   isNonNegative,

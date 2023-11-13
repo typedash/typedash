@@ -19,4 +19,4 @@ export const fromZodParse =
   <T extends ZodTypeAny>(schema: T, safeParams?: Partial<ParseParams>) =>
   (data: unknown): TE.TaskEither<ZodError<T['_input']>, T['_output']> =>
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    pipe(schema.safeParse(data, safeParams), (x) => x, fromSafeParseResult)
+    pipe(schema.safeParse(data, safeParams), fromSafeParseResult)

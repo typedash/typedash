@@ -137,6 +137,8 @@ export {
 export type { Monad } from 'fp-ts/Array'
 
 export {
+  allM,
+  anyM,
   aperture,
   cartesian,
   countBy,
@@ -147,6 +149,8 @@ export {
   endsWith,
   extractAt,
   filterA,
+  fromIterable,
+  fromReadonly,
   getDisorderedEq,
   insertMany,
   join,
@@ -162,11 +166,13 @@ export {
   reduceRightWhile,
   reduceWhile,
   reject,
+  separateNE,
   slice,
   startsWith,
   sum,
   symmetricDifference,
   takeRightWhile,
+  toReadonly,
   transpose,
   upsert,
   without,

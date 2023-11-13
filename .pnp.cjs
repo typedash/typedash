@@ -1857,15 +1857,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typedash/prettier", "workspace:packages/prettier"],\
             ["@typedash/tsconfig", "virtual:eabf0035d19bfe7f86555dd6d144967a27e147712681b038a2a6760de87c3c6ca7df60b47ae301262f597d2367b4b1b5159cda074834ef076e42cd4639b3ade8#workspace:packages/tsconfig"],\
             ["@types/jest", "npm:27.0.3"],\
-            ["@types/lodash", "npm:4.14.177"],\
             ["@types/ramda", "npm:0.27.1"],\
             ["browser-util-inspect", "npm:0.2.0"],\
             ["eslint", "npm:8.9.0"],\
             ["fp-ts", "npm:2.12.3"],\
-            ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],\
+            ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.18.0"],\
             ["io-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.2.19"],\
             ["jest", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:27.3.1"],\
-            ["lodash", "npm:4.17.21"],\
             ["mem", "npm:8.1.1"],\
             ["monocle-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:2.3.12"],\
             ["newtype-ts", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.3.5"],\
@@ -2023,15 +2021,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-json5-npm-0.0.29-f63a7916bd-e60b153664.zip/node_modules/@types/json5/",\
           "packageDependencies": [\
             ["@types/json5", "npm:0.0.29"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/lodash", [\
-        ["npm:4.14.177", {\
-          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.177-a28410b30a-00f9eb300e.zip/node_modules/@types/lodash/",\
-          "packageDependencies": [\
-            ["@types/lodash", "npm:4.14.177"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4930,17 +4919,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["fp-ts-std", [\
-        ["npm:0.13.1", {\
-          "packageLocation": "./.yarn/cache/fp-ts-std-npm-0.13.1-03eb61b178-27c423ba4b.zip/node_modules/fp-ts-std/",\
+        ["npm:0.18.0", {\
+          "packageLocation": "./.yarn/cache/fp-ts-std-npm-0.18.0-4a85ecb449-c9f3d21653.zip/node_modules/fp-ts-std/",\
           "packageDependencies": [\
-            ["fp-ts-std", "npm:0.13.1"]\
+            ["fp-ts-std", "npm:0.18.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1", {\
-          "packageLocation": "./.yarn/__virtual__/fp-ts-std-virtual-f24738ee56/0/cache/fp-ts-std-npm-0.13.1-03eb61b178-27c423ba4b.zip/node_modules/fp-ts-std/",\
+        ["virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.18.0", {\
+          "packageLocation": "./.yarn/__virtual__/fp-ts-std-virtual-e3ee83d2c9/0/cache/fp-ts-std-npm-0.18.0-4a85ecb449-c9f3d21653.zip/node_modules/fp-ts-std/",\
           "packageDependencies": [\
-            ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.13.1"],\
+            ["fp-ts-std", "virtual:fb02ed5584f0d99dbb9bf1c68b5b574676997dded288e7e5c2cf49e630e85b31c00f18cc832c4a996eff4e590896ff30d7880aad21725dc8b970bea757bde3e2#npm:0.18.0"],\
             ["@types/fp-ts", null],\
             ["@types/monocle-ts", null],\
             ["@types/newtype-ts", null],\

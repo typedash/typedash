@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 /**
- * @description:
+ * @description
  * Like `prop` from ramda but manually curried.
- *
- * @see https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/lodash/fp.d.ts#L2979
  *
  * @example
  * pipe(

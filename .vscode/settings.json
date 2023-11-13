@@ -12,6 +12,7 @@
     "relmify",
     "RNEA",
     "Semigroup",
+    "Struct",
     "Subrecord",
     "taskify",
     "tupled",
@@ -24,6 +25,7 @@
     "unprepend",
     "unsurround",
     "untupled",
+    "unwords",
     "Witherable",
     "yarnpkg"
   ],
