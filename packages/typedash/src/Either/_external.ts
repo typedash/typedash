@@ -83,4 +83,11 @@ export {
 
 export type { Either, Left, Right } from 'fp-ts/Either'
 
-export { unsafeUnwrap } from 'fp-ts-std/Either'
+export {
+  mapBoth,
+  match2,
+  unsafeExpect,
+  unsafeExpectLeft,
+  unsafeUnwrap,
+  unsafeUnwrapLeft,
+} from 'fp-ts-std/Either'

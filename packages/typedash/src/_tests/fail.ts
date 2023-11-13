@@ -1,8 +1,8 @@
 import { tapLog } from '../function/tapLog'
-import { R, flow, throwError } from '../index'
+import { R, pipe, throwError } from '../index'
 
-export const fail = flow(
-  R.omit(['constructor', 'toString', 'format']),
-  tapLog,
-  throwError,
-)
+export const fail = <
+  T extends { constructor: unknown; toString: unknown; format: unknown },
+>(
+  x: T,
+) => pipe(x, R.omit(['constructor', 'toString', 'format']), tapLog, throwError)

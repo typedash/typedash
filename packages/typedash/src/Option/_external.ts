@@ -77,11 +77,14 @@ export {
 export type { Option, Some, None } from 'fp-ts/Option'
 
 export {
-  unsafeUnwrap,
+  altAllBy,
   invert,
+  match2,
   memptyUnless,
   memptyWhen,
   noneAs,
   pureIf,
   toMonoid,
+  unsafeExpect,
+  unsafeUnwrap,
 } from 'fp-ts-std/Option'

@@ -2,7 +2,7 @@
  * @description
  * This module is meant to re-export and implement all utility functions.
  * Reason for doing it this way is so `map` is always the same implementation
- * instead of sometimes coming from `lodash` and sometimes coming from `ramda`
+ * instead of sometimes coming from `fp-ts` and sometimes coming from `ramda`.
  * Also allows us to override functions to "fix" or "change" them and not
  * have to update imports throughout the code base.
  *
@@ -28,8 +28,8 @@ export * as PRED from './Predicate'
 export * as R from './Record'
 export * as RA from './ReadonlyArray'
 export * as RNEA from './ReadonlyNonEmptyArray'
-export * as Semi from './Semigroup'
 export * as S from './String'
+export * as Semi from './Semigroup'
 export * as T from './Task'
 export * as TE from './TaskEither'
 export * as TO from './TaskOption'

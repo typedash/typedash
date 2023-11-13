@@ -42,4 +42,12 @@ export {
 } from 'fp-ts/Task'
 export type { Task } from 'fp-ts/Task'
 
-export { sleep, elapsed, execute, unless, when } from 'fp-ts-std/Task'
+export {
+  elapsed,
+  execute,
+  pass,
+  sleep,
+  unless,
+  until,
+  when,
+} from 'fp-ts-std/Task'

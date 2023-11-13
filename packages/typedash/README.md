@@ -3,7 +3,7 @@
 This package houses domain agnostic utility functions that can be used in any project/package. This is the centralized place where you can get util
 functions without needing to know which underlying package it's coming from.
 
-Everything in this package should be curried/auto-curried, take data last, follow similar patterns as `lodash/fp`, `ramda`, `ramda-adjunct`, `fp-ts`,
+Everything in this package should be curried/auto-curried, take data last, follow similar patterns as `ramda`, `ramda-adjunct`, `fp-ts`, `fp-ts-std`,
 and have thorough test coverage.
 
 ## Installation
@@ -17,15 +17,31 @@ yard add --save @typedash/typedash
 
 Utility functions are organized based on the type of data they work on. If they don't fit into a group (`pipe`, `flow`, `ifElse`, etc) then they will be exported as bare functions at the root. To encourage cohesiveness, modules have been collected and exported under a reserved abbreviation. See below for the mapping. In each module, you'll find a `_external.ts` file that houses all the external methods we're re-exporting. Any custom methods that aren't covered by the utils mentioned above are alongside that with tests and exported from the `index.ts`. The root of the `src` directory enforces common abbreviations that are loosely tied to how `fp-ts` organizes itself.
 
-| Module Name     | Abbreviation | Note                            |
-| --------------- | ------------ | ------------------------------- |
-| `function`      | N/A          | Bare word exports, no namespace |
-| `Array`         | `A`          |                                 |
-| `NonEmptyArray` | `NEA`        |                                 |
-| `Option`        | `O`          |                                 |
-| `Promise`       | `P`          |                                 |
-| `Record`        | `R`          | AKA `Object` methods            |
-| `String`        | `S`          |                                 |
+| Module Name             | Abbreviation | Note                            |
+| ----------------------- | ------------ | ------------------------------- |
+| `function`              | N/A          | Bare word exports, no namespace |
+| `Array`                 | `A`          |                                 |
+| `Apply`                 | `AP`         |                                 |
+| `Boolean`               | `B`          |                                 |
+| `Date`                  | `DATE`       |                                 |
+| `Either`                | `E`          |                                 |
+| `Json`                  | `J`          |                                 |
+| `Spectacles`            | `L`          | L for "Lenses"                  |
+| `Number`                | `N`          |                                 |
+| `NonEmptyArray`         | `NEA`        |                                 |
+| `Option`                | `O`          |                                 |
+| `Ord`                   | `ORD`        |                                 |
+| `Promise`               | `P`          |                                 |
+| `Predicate`             | `PRED`       |                                 |
+| `Record`                | `R`          | AKA `Object`/`Struct` methods   |
+| `ReadonlyArray`         | `RA`         |                                 |
+| `ReadonlyNonEmptyArray` | `RNEA`       |                                 |
+| `String`                | `S`          |                                 |
+| `Semigroup`             | `Semi`       |                                 |
+| `Task`                  | `T`          |                                 |
+| `TaskEither`            | `TE`         |                                 |
+| `TaskOption`            | `TO`         |                                 |
+| `Undefined`             | `U`          |                                 |
 
 ## Example
 
@@ -60,4 +76,3 @@ Add functions as you see fit, but be careful of conflicting names. As a base, `f
 | `fp-ts-std`     | https://github.com/samhh/fp-ts-std                    |
 | `ramda`         | https://ramdajs.com/docs/                             |
 | `ramda-adjunct` | https://char0n.github.io/ramda-adjunct/2.23.0/RA.html |
-| `lodash/fp`     | https://github.com/lodash/lodash/wiki/FP-Guide        |

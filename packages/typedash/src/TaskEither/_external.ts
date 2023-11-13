@@ -108,4 +108,10 @@ export {
 } from 'fp-ts/TaskEither'
 export type { TaskEither } from 'fp-ts/TaskEither'
 
-export { unsafeUnwrap, unsafeUnwrapLeft } from 'fp-ts-std/TaskEither'
+export {
+  pass,
+  unsafeExpect,
+  unsafeExpectLeft,
+  unsafeUnwrap,
+  unsafeUnwrapLeft,
+} from 'fp-ts-std/TaskEither'
