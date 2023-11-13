@@ -1,10 +1,12 @@
 {
   "cSpell.words": [
     "bimap",
+    "camelcase",
     "changesets",
     "Compactable",
     "contramap",
     "esbuild",
+    "hygen",
     "juxt",
     "mempty",
     "Monoid",
