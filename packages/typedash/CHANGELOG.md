@@ -1,5 +1,15 @@
 # @typedash/typedash
 
+## 3.7.0
+
+### Minor Changes
+
+- 9daa873: \_ Remove lodash dependency, upgrade fp-ts-std, add ramda-adjunct predicates
+
+### Patch Changes
+
+- f279f00: Improve types for prop
+
 ## 3.6.4
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@typedash/typedash",
-  "version": "3.6.4",
+  "version": "3.7.0",
   "description": "Domain agnostic utility functions",
   "license": "MIT",
   "sideEffects": false,
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@relmify/jest-fp-ts": "^2.0.2",
-    "@typedash/eslint-config-typedash": "0.0.4",
+    "@typedash/eslint-config-typedash": "0.1.0",
     "@typedash/prettier": "0.0.3",
     "@typedash/tsconfig": "0.0.4",
     "@types/jest": "27.0.3",

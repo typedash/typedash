@@ -1,6 +1,6 @@
 {
   "name": "@typedash/eslint-config-typedash",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Eslint",
   "license": "MIT",
   "main": "index.js",

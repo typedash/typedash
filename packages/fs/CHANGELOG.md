@@ -1,5 +1,17 @@
 # @typedash/fs
 
+## 1.3.0
+
+### Minor Changes
+
+- 9daa873: \_ Remove lodash dependency, upgrade fp-ts-std, add ramda-adjunct predicates
+
+### Patch Changes
+
+- Updated dependencies [f279f00]
+- Updated dependencies [9daa873]
+  - @typedash/typedash@3.7.0
+
 ## 1.2.4
 
 ### Patch Changes

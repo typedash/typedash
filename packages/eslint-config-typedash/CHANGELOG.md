@@ -1,5 +1,11 @@
 # @typedash/eslint-config-typedash
 
+## 0.1.0
+
+### Minor Changes
+
+- 9daa873: \_ Remove lodash dependency, upgrade fp-ts-std, add ramda-adjunct predicates
+
 ## 0.0.4
 
 ### Patch Changes
