@@ -62,13 +62,7 @@ export {
   wither,
 } from 'fp-ts/Record'
 
-export {
-  invertAll,
-  invertLast,
-  lookupV,
-  reject,
-  values,
-} from 'fp-ts-std/Record'
+export { invertAll, invertLast, lookupV, reject } from 'fp-ts-std/Record'
 
 // TODO: Suppose we should make a "Struct" module- waiting for more of a reason.
 export {
@@ -89,6 +83,7 @@ export {
   mergeLeft,
   mergeRight,
   objOf as of,
+  values,
   where,
   whereEq,
 } from 'ramda'
