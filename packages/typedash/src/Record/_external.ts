@@ -71,12 +71,13 @@ export {
 } from 'fp-ts-std/Record'
 
 // TODO: Make a "ReadonlyRecord" module- waiting for more of a reason.
-export { pick, omit } from 'fp-ts-std/ReadonlyRecord'
+export { omit } from 'fp-ts-std/ReadonlyRecord'
 
 // TODO: Make a "Struct" module- waiting for more of a reason.
 export {
   merge,
   omitFrom,
+  pick,
   pickFrom,
   renameKey,
   withDefaults,
