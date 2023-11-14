@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.5
+
+### Patch Changes
+
+- a9a0a82: 🏗️ Record Struct blending tweak
+
 ## 3.7.4
 
 ### Patch Changes
