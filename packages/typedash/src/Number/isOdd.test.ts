@@ -1,6 +1,6 @@
 import { isOdd } from './isOdd'
 
-it.each([
+test.each([
   [2, false],
   [1, true],
   [0, false],
