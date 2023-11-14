@@ -1,3 +1,5 @@
+const consoleLog = jest.spyOn(console, 'log').mockImplementation(() => null)
+
 import { Monoid, constantDelay, limitRetries } from 'retry-ts'
 import { pipe } from '../function'
 import * as TE from './_external'
@@ -30,3 +32,5 @@ test('retries according to the policy', async () => {
   expect(result).toEqual('it worked!')
   expect(func).toHaveBeenCalledTimes(numRetries)
 })
+
+consoleLog.mockReset()

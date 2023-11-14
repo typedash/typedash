@@ -1,6 +1,6 @@
 import { isEven } from './isEven'
 
-it.each([
+test.each([
   [2, true],
   [1, false],
   [0, true],
