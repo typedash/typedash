@@ -70,12 +70,13 @@ export {
   values,
 } from 'fp-ts-std/Record'
 
-// TODO: Suppose we should make a "Struct" module- waiting for more of a reason.
+// TODO: Make a "ReadonlyRecord" module- waiting for more of a reason.
+export { pick, omit } from 'fp-ts-std/ReadonlyRecord'
+
+// TODO: Make a "Struct" module- waiting for more of a reason.
 export {
   merge,
-  omit,
   omitFrom,
-  pick,
   pickFrom,
   renameKey,
   withDefaults,
