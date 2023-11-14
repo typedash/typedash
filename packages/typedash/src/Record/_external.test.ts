@@ -8,17 +8,19 @@ describe('values', () => {
     expect(R.values({ foo: 1, bar: 2, baz: 3 })).toEqual([1, 2, 3])
   })
 
-  test('should have types flow', () => {
+  test('omit with values types flowing', () => {
     const data: Record<string, { numbers: Array<number> }> = {
       numbers: { numbers: [5, 6, 7] },
     }
+    const omitProp = 'someProp' as string
     expect(
       pipe(
         data,
+        R.omit([omitProp]),
         R.values,
         A.map(R_prop('numbers')),
         A.flatten,
-        A.mapWithIndex((i, pageNumber) => pageNumber - i - 1),
+        A.mapWithIndex((i, number) => number - i - 1),
       ),
     ).toEqual([4, 4, 4])
   })
