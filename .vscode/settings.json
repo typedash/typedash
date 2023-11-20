@@ -6,6 +6,7 @@
     "Compactable",
     "contramap",
     "esbuild",
+    "foos",
     "hygen",
     "juxt",
     "mempty",

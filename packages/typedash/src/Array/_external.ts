@@ -165,7 +165,7 @@ export {
   product,
   reduceRightWhile,
   reduceWhile,
-  reject,
+  // reject, // See './reject.ts'
   separateNE,
   slice,
   startsWith,
