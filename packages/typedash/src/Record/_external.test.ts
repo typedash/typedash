@@ -8,7 +8,7 @@ describe('values', () => {
     expect(R.values({ foo: 1, bar: 2, baz: 3 })).toEqual([1, 2, 3])
   })
 
-  test('omit with values types flowing', () => {
+  test('`omitRecord` with `values` types flowing', () => {
     const data: Record<string, { numbers: Array<number> }> = {
       numbers: { numbers: [5, 6, 7] },
     }
@@ -16,7 +16,7 @@ describe('values', () => {
     expect(
       pipe(
         data,
-        R.omit([omitProp]),
+        R.omitRecord([omitProp]),
         R.values,
         A.map(R_prop('numbers')),
         A.flatten,
