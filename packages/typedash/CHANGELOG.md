@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.7
+
+### Patch Changes
+
+- f97577c: 🔧 Fix A.reject types
+
 ## 3.7.6
 
 ### Patch Changes
