@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.10
+
+### Patch Changes
+
+- 0266297: build
+
 ## 3.7.9
 
 ### Patch Changes
