@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.11
+
+### Patch Changes
+
+- 1622fda: 🤞 Fix E.toPromise
+
 ## 3.7.10
 
 ### Patch Changes
