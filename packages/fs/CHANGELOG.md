@@ -1,5 +1,135 @@
 # @typedash/fs
 
+## 1.3.8
+
+### Patch Changes
+
+- Updated dependencies [7846cea]
+  - @typedash/typedash@3.7.8
+
+## 1.3.7
+
+### Patch Changes
+
+- Updated dependencies [f97577c]
+  - @typedash/typedash@3.7.7
+
+## 1.3.6
+
+### Patch Changes
+
+- Updated dependencies [a59f19c]
+  - @typedash/typedash@3.7.6
+
+## 1.3.5
+
+### Patch Changes
+
+- Updated dependencies [a9a0a82]
+  - @typedash/typedash@3.7.5
+
+## 1.3.4
+
+### Patch Changes
+
+- Updated dependencies [3a36b49]
+  - @typedash/typedash@3.7.4
+
+## 1.3.3
+
+### Patch Changes
+
+- Updated dependencies [ae52bb5]
+  - @typedash/typedash@3.7.3
+
+## 1.3.2
+
+### Patch Changes
+
+- Updated dependencies [c8c9ff5]
+  - @typedash/typedash@3.7.2
+
+## 1.3.1
+
+### Patch Changes
+
+- Updated dependencies [71b6235]
+  - @typedash/typedash@3.7.1
+
+## 1.3.0
+
+### Minor Changes
+
+- 9daa873: \_ Remove lodash dependency, upgrade fp-ts-std, add ramda-adjunct predicates
+
+### Patch Changes
+
+- Updated dependencies [f279f00]
+- Updated dependencies [9daa873]
+  - @typedash/typedash@3.7.0
+
+## 1.2.4
+
+### Patch Changes
+
+- Updated dependencies [9ebbbf8]
+  - @typedash/typedash@3.6.4
+
+## 1.2.3
+
+### Patch Changes
+
+- Updated dependencies [61fbd8d]
+  - @typedash/typedash@3.6.3
+
+## 1.2.2
+
+### Patch Changes
+
+- Updated dependencies [e3aa736]
+  - @typedash/typedash@3.6.2
+
+## 1.2.1
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+- Updated dependencies [77722a9]
+  - @typedash/typedash@3.6.1
+
+## 1.2.0
+
+### Minor Changes
+
+- 1da5af0: 🧶 Added some odds and ends
+
+### Patch Changes
+
+- Updated dependencies [89a222a]
+- Updated dependencies [1da5af0]
+  - @typedash/typedash@3.6.0
+
+## 1.1.11
+
+### Patch Changes
+
+- Updated dependencies [c13a4a0]
+  - @typedash/typedash@3.5.2
+
+## 1.1.10
+
+### Patch Changes
+
+- Updated dependencies [0e52536]
+  - @typedash/typedash@3.5.1
+
+## 1.1.9
+
+### Patch Changes
+
+- Updated dependencies [3ec495e]
+  - @typedash/typedash@3.5.0
+
 ## 1.1.8
 
 ### Patch Changes

@@ -10,12 +10,12 @@ import * as TE from './_external'
  *   TE.right({ id1: '1', id2: '2' }),
  *   TE.bindMerge(({ id1, id2 }) =>
  *     TE.allObj({
- *       user1: fetchUser(id1),
- *       user2: fetchUser(id2),
+ *       user1: TE.right(id1),
+ *       user2: TE.right(id2),
  *     })
- *   )
+ *   ),
  *   TE.map(({ id1, id2, user1, user2 }) => {
- *     // Do whatever you need with everything
+ *     console.log({ id1, id2, user1, user2 })
  *   }),
  * )
  */

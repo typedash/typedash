@@ -25,14 +25,18 @@ export {
   append,
   dropLeft,
   dropLeftWhile,
+  dropPrefix,
   dropRight,
   dropRightWhile,
+  dropSuffix,
+  fromBool,
   fromNumber,
   head,
   init,
   isAlpha,
   isAlphaNum,
   isLower,
+  isSpace,
   isUpper,
   last,
   lines,
@@ -55,11 +59,24 @@ export {
   unlines,
   unprepend,
   unsurround,
-  isSpace,
+  unwords,
+  words,
 } from 'fp-ts-std/String'
 
 export { equals, concat } from 'ramda'
 export { padEnd, padStart, padCharsEnd, padCharsStart } from 'ramda-adjunct'
 
-// TODO: Replace with something else
-export { toInteger } from 'lodash/fp'
+/**
+ * @description Deprecated.
+ * @deprecated Use N.integerFromString / N.integerFromString_UNSAFE
+ * @example
+ * pipe(
+ *   '5.5',
+ *   N.integerFromString,
+ * ) // O.some(5)
+ * pipe(
+ *   '5.5',
+ *   N.integerFromString_UNSAFE,
+ * ) // 5
+ */
+export const toInteger = (): undefined => undefined

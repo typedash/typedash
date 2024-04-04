@@ -2,11 +2,11 @@ export {
   Eq,
   fold,
   foldW,
+  isBoolean,
   match,
   matchW,
-  isBoolean,
-  Ord,
   MonoidAll,
   MonoidAny,
+  Ord,
 } from 'fp-ts/boolean'
-export { and, or, xor } from 'fp-ts-std/Boolean'
+export { and, Bounded, Enum, invert, or, xor } from 'fp-ts-std/Boolean'

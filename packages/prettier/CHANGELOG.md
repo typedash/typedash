@@ -1,5 +1,11 @@
 # @typedash/prettier
 
+## 0.0.3
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+
 ## 0.0.2
 
 ### Patch Changes

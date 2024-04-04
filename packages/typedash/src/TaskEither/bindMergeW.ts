@@ -9,13 +9,11 @@ import * as TE from './_external'
  * @example
  * pipe(
  *   TE.right({ id1: '1', id2: '2' }),
- *   TE.bindMergeW(({ id1, id2 }) =>
- *     AP.sequenceS(TE.taskEither)({
- *       user1: fetchUser(id1),
- *       user2: fetchUser(id2),
- *     })
- *   )
- *   TE.map(({ id1, id2, user1, user2 }) => {
+ *   TE.bindMergeW(({ id1, id2 }) => TE.allObj({
+ *     foo: TE.of<string, number>(5),
+ *     bar: TE.of<Error, number>(6),
+ *   })),
+ *   E.map(({ id1, id2, foo, bar }) => {
  *     // Do whatever you need with everything
  *   }),
  * )

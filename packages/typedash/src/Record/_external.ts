@@ -63,16 +63,26 @@ export {
 } from 'fp-ts/Record'
 
 export {
-  pick,
-  omit,
   invertAll,
-  merge,
-  reject,
-  values,
   invertLast,
   lookupV,
-  pickFrom,
+  reject,
+  values,
 } from 'fp-ts-std/Record'
+
+// TODO: Make a "ReadonlyRecord" module- waiting for more of a reason.
+export { omit as omitRecord } from 'fp-ts-std/ReadonlyRecord'
+
+// TODO: Make a "Struct" module- waiting for more of a reason.
+export {
+  merge,
+  omit,
+  omitFrom,
+  pick,
+  pickFrom,
+  renameKey,
+  withDefaults,
+} from 'fp-ts-std/Struct'
 
 export {
   assoc,
@@ -140,4 +150,4 @@ export const propEq = (): undefined => undefined
  * @description Deprecated
  * @deprecated Use `R.of`
  */
-export const singleton = () => undefined
+export const singleton = (): undefined => undefined

@@ -1,5 +1,114 @@
 # @typedash/typedash
 
+## 3.7.8
+
+### Patch Changes
+
+- 7846cea: 🔧 Fix A.reject types
+
+## 3.7.7
+
+### Patch Changes
+
+- f97577c: 🔧 Fix A.reject types
+
+## 3.7.6
+
+### Patch Changes
+
+- a59f19c: 🏗️ Record Struct blending tweak
+
+## 3.7.5
+
+### Patch Changes
+
+- a9a0a82: 🏗️ Record Struct blending tweak
+
+## 3.7.4
+
+### Patch Changes
+
+- 3a36b49: 🏗️ Record Struct blending tweak
+
+## 3.7.3
+
+### Patch Changes
+
+- ae52bb5: 🏗️ Record Struct blending tweak
+
+## 3.7.2
+
+### Patch Changes
+
+- c8c9ff5: 🏗️ Record Struct blending tweak
+
+## 3.7.1
+
+### Patch Changes
+
+- 71b6235: 🏗️ Record Struct blending tweak
+
+## 3.7.0
+
+### Minor Changes
+
+- 9daa873: \_ Remove lodash dependency, upgrade fp-ts-std, add ramda-adjunct predicates
+
+### Patch Changes
+
+- f279f00: Improve types for prop
+
+## 3.6.4
+
+### Patch Changes
+
+- 9ebbbf8: 📦 Package bump
+
+## 3.6.3
+
+### Patch Changes
+
+- 61fbd8d: 🖨️ Print errors better with S.stringify
+
+## 3.6.2
+
+### Patch Changes
+
+- e3aa736: ؟ Add custom 'TE.left'
+
+## 3.6.1
+
+### Patch Changes
+
+- 77722a9: 📦 Patch bump for new build
+- Updated dependencies [77722a9]
+  - @typedash/p-memoize@7.1.3
+
+## 3.6.0
+
+### Minor Changes
+
+- 89a222a: 🪢 Add 'bindValue' and flesh out TaskOption.
+- 1da5af0: 🧶 Added some odds and ends
+
+## 3.5.2
+
+### Patch Changes
+
+- c13a4a0: Add `TE.lift` example
+
+## 3.5.1
+
+### Patch Changes
+
+- 0e52536: Make `TE.lift`'s left a generic
+
+## 3.5.0
+
+### Minor Changes
+
+- 3ec495e: Add `TE.lift` and `TE.retry`
+
 ## 3.4.2
 
 ### Patch Changes

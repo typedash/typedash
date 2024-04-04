@@ -65,7 +65,7 @@ export {
   getApplicativeTaskValidation,
   getOrElse,
   getOrElseW,
-  left,
+  left as _left,
   leftIO,
   leftTask,
   map,
@@ -107,3 +107,11 @@ export {
   tryCatchK,
 } from 'fp-ts/TaskEither'
 export type { TaskEither } from 'fp-ts/TaskEither'
+
+export {
+  pass,
+  unsafeExpect,
+  unsafeExpectLeft,
+  unsafeUnwrap,
+  unsafeUnwrapLeft,
+} from 'fp-ts-std/TaskEither'

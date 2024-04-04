@@ -1,7 +1,13 @@
 // import stringifyObject from 'stringify-object'
 import { P, match } from 'ts-pattern'
 import * as A from '../Array/_external'
-import { isArray, isFunction, isNaN, pipe } from '../function/_external'
+import {
+  isArray,
+  isError,
+  isFunction,
+  isNaN,
+  pipe,
+} from '../function/_external'
 import { getFunctionName } from '../function/getFunctionName'
 import * as S from '../String/_external'
 
@@ -29,5 +35,6 @@ export const stringify = (data: unknown): string =>
     .when(isNaN, () => 'NaN')
     .when(isArray, stringifyArray)
     .when(isFunction, getFunctionName)
+    .when(isError, (x) => x.message ?? x.toString())
     .with(P._, stringifyObject_)
     .exhaustive()
