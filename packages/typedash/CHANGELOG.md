@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.9
+
+### Patch Changes
+
+- 30aa07b: 🤞 E.toPromise
+
 ## 3.7.8
 
 ### Patch Changes
