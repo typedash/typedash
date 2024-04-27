@@ -30,7 +30,7 @@ to: packages/<%= name %>/package.json
   "dependencies": {
     "@typedash/typedash": "<%= versions.typedash %>",
     "axios": "0.24.0",
-    "zod": "3.14.2"
+    "zod": "3.23.4"
   },
   "devDependencies": {
     "@typedash/eslint-config-typedash": "<%= versions.eslintConfigtypedash %>",
