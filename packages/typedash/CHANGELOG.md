@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.13
+
+### Patch Changes
+
+- d5b063d: 🧵 Add S.capitalize and S.titleCase
+
 ## 3.7.12
 
 ### Patch Changes
