@@ -80,7 +80,7 @@ export {
   Monad,
 } from 'fp-ts/NonEmptyArray'
 
-export { includes, sort, sortBy, groupWith, uniq, uniqBy } from 'ramda'
+export { includes, sort, sortBy, groupWith, uniq, uniqBy, join } from 'ramda'
 
 export {
   included,
