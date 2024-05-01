@@ -1,5 +1,11 @@
 # @typedash/typedash
 
+## 3.7.14
+
+### Patch Changes
+
+- 6de8cfe: 📦 Bump
+
 ## 3.7.13
 
 ### Patch Changes
